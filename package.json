@@ -1,0 +1,19 @@
+{
+  "name": "pw_pm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.1",
+    "allure-playwright": "^3.12.2"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

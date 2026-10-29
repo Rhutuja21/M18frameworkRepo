@@ -1,0 +1,561 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: demoqa.spec.ts >> demoqa calender
+- Location: tests\demoqa.spec.ts:3:5
+
+# Error details
+
+```
+Error: locator.click: Error: strict mode violation: getByText('5', { exact: true }) resolved to 2 elements:
+    1) <div title="" tabindex="-1" role="gridcell" aria-disabled="false" aria-selected="false" aria-label="Choose Friday, May 5th, 2000" class="react-datepicker__day react-datepicker__day--005">5</div> aka getByRole('gridcell', { name: 'Choose Friday, May 5th,' })
+    2) <div title="" tabindex="-1" role="gridcell" aria-disabled="false" aria-selected="false" aria-label="Choose Monday, June 5th, 2000" class="react-datepicker__day react-datepicker__day--005 react-datepicker__day--outside-month">5</div> aka getByRole('gridcell', { name: 'Choose Monday, June 5th,' })
+
+Call log:
+  - waiting for getByText('5', { exact: true })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://demoqa.com
+  - generic [ref=e8]:
+    - generic [ref=e11]:
+      - generic [ref=e12]: Elements
+      - generic [ref=e24]:
+        - generic [ref=e25] [cursor=pointer]: Forms
+        - list [ref=e38]:
+          - listitem [ref=e39] [cursor=pointer]:
+            - link "Practice Form" [ref=e40]:
+              - /url: /automation-practice-form
+      - generic [ref=e43]: Alerts, Frame & Windows
+      - generic [ref=e55]: Widgets
+      - generic [ref=e68]: Interactions
+      - generic [ref=e80]: Book Store Application
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - heading "Practice Form" [level=1] [ref=e94]
+        - heading "Student Registration Form" [level=5] [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: Name
+            - textbox "First Name" [ref=e101]
+            - textbox "Last Name" [ref=e103]
+          - generic [ref=e104]:
+            - generic [ref=e105]: Email
+            - textbox "name@example.com" [ref=e108]
+          - generic [ref=e109]:
+            - generic [ref=e110]: Gender
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - radio "Male" [ref=e113]
+                - generic [ref=e114]: Male
+              - generic [ref=e115]:
+                - radio "Female" [ref=e116]
+                - generic [ref=e117]: Female
+              - generic [ref=e118]:
+                - radio "Other" [ref=e119]
+                - generic [ref=e120]: Other
+          - generic [ref=e121]:
+            - generic [ref=e122]: Mobile(10 Digits)
+            - textbox "Mobile Number" [ref=e125]
+          - generic [ref=e126]:
+            - generic [ref=e127]: Date of Birth
+            - generic [ref=e129]:
+              - textbox [active] [ref=e132]: 15 Oct 2026
+              - dialog "Choose Date" [ref=e136]:
+                - alert [ref=e137]: May 2000
+                - button "Previous Month" [ref=e138] [cursor=pointer]
+                - button "Next Month" [ref=e139] [cursor=pointer]
+                - generic [ref=e140]:
+                  - generic [ref=e141]:
+                    - heading "May 2000" [level=2] [ref=e142]
+                    - generic [ref=e143]:
+                      - combobox [ref=e145]:
+                        - option "January"
+                        - option "February"
+                        - option "March"
+                        - option "April"
+                        - option "May" [selected]
+                        - option "June"
+                        - option "July"
+                        - option "August"
+                        - option "September"
+                        - option "October"
+                        - option "November"
+                        - option "December"
+                      - combobox [ref=e147]:
+                        - option "1900"
+                        - option "1901"
+                        - option "1902"
+                        - option "1903"
+                        - option "1904"
+                        - option "1905"
+                        - option "1906"
+                        - option "1907"
+                        - option "1908"
+                        - option "1909"
+                        - option "1910"
+                        - option "1911"
+                        - option "1912"
+                        - option "1913"
+                        - option "1914"
+                        - option "1915"
+                        - option "1916"
+                        - option "1917"
+                        - option "1918"
+                        - option "1919"
+                        - option "1920"
+                        - option "1921"
+                        - option "1922"
+                        - option "1923"
+                        - option "1924"
+                        - option "1925"
+                        - option "1926"
+                        - option "1927"
+                        - option "1928"
+                        - option "1929"
+                        - option "1930"
+                        - option "1931"
+                        - option "1932"
+                        - option "1933"
+                        - option "1934"
+                        - option "1935"
+                        - option "1936"
+                        - option "1937"
+                        - option "1938"
+                        - option "1939"
+                        - option "1940"
+                        - option "1941"
+                        - option "1942"
+                        - option "1943"
+                        - option "1944"
+                        - option "1945"
+                        - option "1946"
+                        - option "1947"
+                        - option "1948"
+                        - option "1949"
+                        - option "1950"
+                        - option "1951"
+                        - option "1952"
+                        - option "1953"
+                        - option "1954"
+                        - option "1955"
+                        - option "1956"
+                        - option "1957"
+                        - option "1958"
+                        - option "1959"
+                        - option "1960"
+                        - option "1961"
+                        - option "1962"
+                        - option "1963"
+                        - option "1964"
+                        - option "1965"
+                        - option "1966"
+                        - option "1967"
+                        - option "1968"
+                        - option "1969"
+                        - option "1970"
+                        - option "1971"
+                        - option "1972"
+                        - option "1973"
+                        - option "1974"
+                        - option "1975"
+                        - option "1976"
+                        - option "1977"
+                        - option "1978"
+                        - option "1979"
+                        - option "1980"
+                        - option "1981"
+                        - option "1982"
+                        - option "1983"
+                        - option "1984"
+                        - option "1985"
+                        - option "1986"
+                        - option "1987"
+                        - option "1988"
+                        - option "1989"
+                        - option "1990"
+                        - option "1991"
+                        - option "1992"
+                        - option "1993"
+                        - option "1994"
+                        - option "1995"
+                        - option "1996"
+                        - option "1997"
+                        - option "1998"
+                        - option "1999"
+                        - option "2000" [selected]
+                        - option "2001"
+                        - option "2002"
+                        - option "2003"
+                        - option "2004"
+                        - option "2005"
+                        - option "2006"
+                        - option "2007"
+                        - option "2008"
+                        - option "2009"
+                        - option "2010"
+                        - option "2011"
+                        - option "2012"
+                        - option "2013"
+                        - option "2014"
+                        - option "2015"
+                        - option "2016"
+                        - option "2017"
+                        - option "2018"
+                        - option "2019"
+                        - option "2020"
+                        - option "2021"
+                        - option "2022"
+                        - option "2023"
+                        - option "2024"
+                        - option "2025"
+                        - option "2026"
+                        - option "2027"
+                        - option "2028"
+                        - option "2029"
+                        - option "2030"
+                        - option "2031"
+                        - option "2032"
+                        - option "2033"
+                        - option "2034"
+                        - option "2035"
+                        - option "2036"
+                        - option "2037"
+                        - option "2038"
+                        - option "2039"
+                        - option "2040"
+                        - option "2041"
+                        - option "2042"
+                        - option "2043"
+                        - option "2044"
+                        - option "2045"
+                        - option "2046"
+                        - option "2047"
+                        - option "2048"
+                        - option "2049"
+                        - option "2050"
+                        - option "2051"
+                        - option "2052"
+                        - option "2053"
+                        - option "2054"
+                        - option "2055"
+                        - option "2056"
+                        - option "2057"
+                        - option "2058"
+                        - option "2059"
+                        - option "2060"
+                        - option "2061"
+                        - option "2062"
+                        - option "2063"
+                        - option "2064"
+                        - option "2065"
+                        - option "2066"
+                        - option "2067"
+                        - option "2068"
+                        - option "2069"
+                        - option "2070"
+                        - option "2071"
+                        - option "2072"
+                        - option "2073"
+                        - option "2074"
+                        - option "2075"
+                        - option "2076"
+                        - option "2077"
+                        - option "2078"
+                        - option "2079"
+                        - option "2080"
+                        - option "2081"
+                        - option "2082"
+                        - option "2083"
+                        - option "2084"
+                        - option "2085"
+                        - option "2086"
+                        - option "2087"
+                        - option "2088"
+                        - option "2089"
+                        - option "2090"
+                        - option "2091"
+                        - option "2092"
+                        - option "2093"
+                        - option "2094"
+                        - option "2095"
+                        - option "2096"
+                        - option "2097"
+                        - option "2098"
+                        - option "2099"
+                        - option "2100"
+                  - table [ref=e148]:
+                    - rowgroup [ref=e149]:
+                      - row [ref=e150]:
+                        - columnheader "Sunday" [ref=e151]: Su
+                        - columnheader "Monday" [ref=e153]: Mo
+                        - columnheader "Tuesday" [ref=e155]: Tu
+                        - columnheader "Wednesday" [ref=e157]: We
+                        - columnheader "Thursday" [ref=e159]: Th
+                        - columnheader "Friday" [ref=e161]: Fr
+                        - columnheader "Saturday" [ref=e163]: Sa
+                    - rowgroup "Month May, 2000" [ref=e165]:
+                      - row [ref=e166]:
+                        - gridcell "Choose Sunday, April 30th, 2000" [ref=e167] [cursor=pointer]: "30"
+                        - gridcell "Choose Monday, May 1st, 2000" [ref=e168] [cursor=pointer]: "1"
+                        - gridcell "Choose Tuesday, May 2nd, 2000" [ref=e169] [cursor=pointer]: "2"
+                        - gridcell "Choose Wednesday, May 3rd, 2000" [ref=e170] [cursor=pointer]: "3"
+                        - gridcell "Choose Thursday, May 4th, 2000" [ref=e171] [cursor=pointer]: "4"
+                        - gridcell "Choose Friday, May 5th, 2000" [ref=e172] [cursor=pointer]: "5"
+                        - gridcell "Choose Saturday, May 6th, 2000" [ref=e173] [cursor=pointer]: "6"
+                      - row [ref=e174]:
+                        - gridcell "Choose Sunday, May 7th, 2000" [ref=e175] [cursor=pointer]: "7"
+                        - gridcell "Choose Monday, May 8th, 2000" [ref=e176] [cursor=pointer]: "8"
+                        - gridcell "Choose Tuesday, May 9th, 2000" [ref=e177] [cursor=pointer]: "9"
+                        - gridcell "Choose Wednesday, May 10th, 2000" [ref=e178] [cursor=pointer]: "10"
+                        - gridcell "Choose Thursday, May 11th, 2000" [ref=e179] [cursor=pointer]: "11"
+                        - gridcell "Choose Friday, May 12th, 2000" [ref=e180] [cursor=pointer]: "12"
+                        - gridcell "Choose Saturday, May 13th, 2000" [ref=e181] [cursor=pointer]: "13"
+                      - row [ref=e182]:
+                        - gridcell "Choose Sunday, May 14th, 2000" [ref=e183] [cursor=pointer]: "14"
+                        - gridcell "Choose Monday, May 15th, 2000" [ref=e184] [cursor=pointer]: "15"
+                        - gridcell "Choose Tuesday, May 16th, 2000" [ref=e185] [cursor=pointer]: "16"
+                        - gridcell "Choose Wednesday, May 17th, 2000" [ref=e186] [cursor=pointer]: "17"
+                        - gridcell "Choose Thursday, May 18th, 2000" [ref=e187] [cursor=pointer]: "18"
+                        - gridcell "Choose Friday, May 19th, 2000" [ref=e188] [cursor=pointer]: "19"
+                        - gridcell "Choose Saturday, May 20th, 2000" [ref=e189] [cursor=pointer]: "20"
+                      - row [ref=e190]:
+                        - gridcell "Choose Sunday, May 21st, 2000" [ref=e191] [cursor=pointer]: "21"
+                        - gridcell "Choose Monday, May 22nd, 2000" [ref=e192] [cursor=pointer]: "22"
+                        - gridcell "Choose Tuesday, May 23rd, 2000" [ref=e193] [cursor=pointer]: "23"
+                        - gridcell "Choose Wednesday, May 24th, 2000" [ref=e194] [cursor=pointer]: "24"
+                        - gridcell "Choose Thursday, May 25th, 2000" [ref=e195] [cursor=pointer]: "25"
+                        - gridcell "Choose Friday, May 26th, 2000" [ref=e196] [cursor=pointer]: "26"
+                        - gridcell "Choose Saturday, May 27th, 2000" [ref=e197] [cursor=pointer]: "27"
+                      - row [ref=e198]:
+                        - gridcell "Choose Sunday, May 28th, 2000" [ref=e199] [cursor=pointer]: "28"
+                        - gridcell "Choose Monday, May 29th, 2000" [ref=e200] [cursor=pointer]: "29"
+                        - gridcell "Choose Tuesday, May 30th, 2000" [ref=e201] [cursor=pointer]: "30"
+                        - gridcell "Choose Wednesday, May 31st, 2000" [ref=e202] [cursor=pointer]: "31"
+                        - gridcell "Choose Thursday, June 1st, 2000" [ref=e203] [cursor=pointer]: "1"
+                        - gridcell "Choose Friday, June 2nd, 2000" [ref=e204] [cursor=pointer]: "2"
+                        - gridcell "Choose Saturday, June 3rd, 2000" [ref=e205] [cursor=pointer]: "3"
+                      - row [ref=e206]:
+                        - gridcell "Choose Sunday, June 4th, 2000" [ref=e207] [cursor=pointer]: "4"
+                        - gridcell "Choose Monday, June 5th, 2000" [ref=e208] [cursor=pointer]: "5"
+                        - gridcell "Choose Tuesday, June 6th, 2000" [ref=e209] [cursor=pointer]: "6"
+                        - gridcell "Choose Wednesday, June 7th, 2000" [ref=e210] [cursor=pointer]: "7"
+                        - gridcell "Choose Thursday, June 8th, 2000" [ref=e211] [cursor=pointer]: "8"
+                        - gridcell "Choose Friday, June 9th, 2000" [ref=e212] [cursor=pointer]: "9"
+                        - gridcell "Choose Saturday, June 10th, 2000" [ref=e213] [cursor=pointer]: "10"
+          - generic [ref=e214]:
+            - generic [ref=e215]: Subjects
+            - generic [ref=e218]:
+              - log [ref=e220]
+              - combobox [ref=e224]
+          - generic [ref=e227]:
+            - generic [ref=e228]: Hobbies
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - checkbox "Sports" [ref=e232]
+                - generic [ref=e233]: Sports
+              - generic [ref=e234]:
+                - checkbox "Reading" [ref=e235]
+                - generic [ref=e236]: Reading
+              - generic [ref=e237]:
+                - checkbox "Music" [ref=e238]
+                - generic [ref=e239]: Music
+          - generic [ref=e240]:
+            - generic [ref=e241]: Picture
+            - button "Choose File" [ref=e244] [cursor=pointer]
+          - generic [ref=e245]:
+            - generic [ref=e246]: Current Address
+            - textbox "Current Address" [ref=e249]
+          - generic [ref=e250]:
+            - generic [ref=e251]: State and City
+            - generic [ref=e254]:
+              - log [ref=e256]
+              - generic [ref=e258]:
+                - generic [ref=e259]: Select State
+                - combobox [ref=e261]
+            - generic [ref=e267]:
+              - generic:
+                - log
+                - generic: Select City
+          - button "Submit" [ref=e270] [cursor=pointer]
+      - iframe [ref=e274]:
+        - generic [ref=f6e1]:
+          - generic [ref=f6e5]:
+            - generic [ref=f6e6]:
+              - generic "Cert Masterclass" [ref=f6e7]:
+                - link "Start Learning Free Today" [ref=f6e9] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CpN8sF2HQapjMAszImsMPiuid2AjMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBJ8CT9D8A6WpbKf_unmjnBE_4PkJdIWkgm7TR-XxDTZRwSYB3tSw_um-1fvd6BqGRFLB6RwjO7eXOU-rYWMGo2sXikbr42Mw8zdrtwDkwRdOiv-VK_QBE5AHFGuvk-spY0kvfAcicJhuox7k1poKRueBbEat0o1UMPGCPANJra5R_F0Ene0VFL-fKb8vlV07-Oy5IkkKkP-mfXc-nH7xOqbrUSkCyal4usxsWgM2_MbB59OawtOfAqrkropui02UbFwHyaSbFxnnF_MDdmQF6BN878GtCpCVI1GAJp2HTaGCyXWWRhTB0eQaveAmHzflVi6ZHhiTjYP38zUuYkpaWtWmqz97A8d_n_i4I1Wiw9FSFOsf-oIgjhextsgrKPdVterABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY2Izh66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwin2OHrobuXAxVMpGYCHQp0B4vqDRMIjLfi66G7lwMVTKRmAh0KdAeL8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAJBhC0ESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE&num=1&cid=CAQSiAIAQM4h3If1jkac5gZjJmh3JrrDGL0fFediQXDobO3N_g-udKT9WINQEt1_ukoRAlmA9i8WRh8-xlW-QXdlBX5RBi5cUHSFVP7_Ul8T9RvmjJ0T1KfbGlxpfLjIEHFb_jMlwlvvNdYG3R_LT1th0WBvEB6MGsjrIvx-HGqVw7-LGniPvNrXi8kxcwcwaFV6NZbNVgpzp3jc_FqcUIgT4W_dN5Mq5TYoHjYF7ujy-gjgrWpB2_zuPX0A9LqcmVe8w73IuljZKxT-J9BagV9MCOgW1QsbXGz0qi0XyOJhNcuUDPixqNYodYsjYvkB5VvtrDNWyd2DPtdHXXKUk48-gjElCIUR5LWY9ygYAQ&sig=AOD64_36qUTVRIEDr_kIAX5nGnONleMyZA&rf=4&nb=0&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE
+              - generic "Cert Masterclass" [ref=f6e10]:
+                - link "Eliminate the Guesswork" [ref=f6e11] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CpN8sF2HQapjMAszImsMPiuid2AjMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBJ8CT9D8A6WpbKf_unmjnBE_4PkJdIWkgm7TR-XxDTZRwSYB3tSw_um-1fvd6BqGRFLB6RwjO7eXOU-rYWMGo2sXikbr42Mw8zdrtwDkwRdOiv-VK_QBE5AHFGuvk-spY0kvfAcicJhuox7k1poKRueBbEat0o1UMPGCPANJra5R_F0Ene0VFL-fKb8vlV07-Oy5IkkKkP-mfXc-nH7xOqbrUSkCyal4usxsWgM2_MbB59OawtOfAqrkropui02UbFwHyaSbFxnnF_MDdmQF6BN878GtCpCVI1GAJp2HTaGCyXWWRhTB0eQaveAmHzflVi6ZHhiTjYP38zUuYkpaWtWmqz97A8d_n_i4I1Wiw9FSFOsf-oIgjhextsgrKPdVterABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY2Izh66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwin2OHrobuXAxVMpGYCHQp0B4vqDRMIjLfi66G7lwMVTKRmAh0KdAeL8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAJBhC0ESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE&num=1&cid=CAQSiAIAQM4h3If1jkac5gZjJmh3JrrDGL0fFediQXDobO3N_g-udKT9WINQEt1_ukoRAlmA9i8WRh8-xlW-QXdlBX5RBi5cUHSFVP7_Ul8T9RvmjJ0T1KfbGlxpfLjIEHFb_jMlwlvvNdYG3R_LT1th0WBvEB6MGsjrIvx-HGqVw7-LGniPvNrXi8kxcwcwaFV6NZbNVgpzp3jc_FqcUIgT4W_dN5Mq5TYoHjYF7ujy-gjgrWpB2_zuPX0A9LqcmVe8w73IuljZKxT-J9BagV9MCOgW1QsbXGz0qi0XyOJhNcuUDPixqNYodYsjYvkB5VvtrDNWyd2DPtdHXXKUk48-gjElCIUR5LWY9ygYAQ&sig=AOD64_36qUTVRIEDr_kIAX5nGnONleMyZA&rf=4&nb=0&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE
+              - link "Step-by-step video training to help you prepare and pass your Claude exam. Only $29" [ref=f6e13] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CpN8sF2HQapjMAszImsMPiuid2AjMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBJ8CT9D8A6WpbKf_unmjnBE_4PkJdIWkgm7TR-XxDTZRwSYB3tSw_um-1fvd6BqGRFLB6RwjO7eXOU-rYWMGo2sXikbr42Mw8zdrtwDkwRdOiv-VK_QBE5AHFGuvk-spY0kvfAcicJhuox7k1poKRueBbEat0o1UMPGCPANJra5R_F0Ene0VFL-fKb8vlV07-Oy5IkkKkP-mfXc-nH7xOqbrUSkCyal4usxsWgM2_MbB59OawtOfAqrkropui02UbFwHyaSbFxnnF_MDdmQF6BN878GtCpCVI1GAJp2HTaGCyXWWRhTB0eQaveAmHzflVi6ZHhiTjYP38zUuYkpaWtWmqz97A8d_n_i4I1Wiw9FSFOsf-oIgjhextsgrKPdVterABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY2Izh66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwin2OHrobuXAxVMpGYCHQp0B4vqDRMIjLfi66G7lwMVTKRmAh0KdAeL8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAJBhC0ESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE&num=1&cid=CAQSiAIAQM4h3If1jkac5gZjJmh3JrrDGL0fFediQXDobO3N_g-udKT9WINQEt1_ukoRAlmA9i8WRh8-xlW-QXdlBX5RBi5cUHSFVP7_Ul8T9RvmjJ0T1KfbGlxpfLjIEHFb_jMlwlvvNdYG3R_LT1th0WBvEB6MGsjrIvx-HGqVw7-LGniPvNrXi8kxcwcwaFV6NZbNVgpzp3jc_FqcUIgT4W_dN5Mq5TYoHjYF7ujy-gjgrWpB2_zuPX0A9LqcmVe8w73IuljZKxT-J9BagV9MCOgW1QsbXGz0qi0XyOJhNcuUDPixqNYodYsjYvkB5VvtrDNWyd2DPtdHXXKUk48-gjElCIUR5LWY9ygYAQ&sig=AOD64_36qUTVRIEDr_kIAX5nGnONleMyZA&rf=4&nb=7&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE
+            - generic [ref=f6e16]:
+              - generic "Cert Masterclass" [ref=f6e18]:
+                - link "Cert Masterclass" [ref=f6e19] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CpN8sF2HQapjMAszImsMPiuid2AjMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBJ8CT9D8A6WpbKf_unmjnBE_4PkJdIWkgm7TR-XxDTZRwSYB3tSw_um-1fvd6BqGRFLB6RwjO7eXOU-rYWMGo2sXikbr42Mw8zdrtwDkwRdOiv-VK_QBE5AHFGuvk-spY0kvfAcicJhuox7k1poKRueBbEat0o1UMPGCPANJra5R_F0Ene0VFL-fKb8vlV07-Oy5IkkKkP-mfXc-nH7xOqbrUSkCyal4usxsWgM2_MbB59OawtOfAqrkropui02UbFwHyaSbFxnnF_MDdmQF6BN878GtCpCVI1GAJp2HTaGCyXWWRhTB0eQaveAmHzflVi6ZHhiTjYP38zUuYkpaWtWmqz97A8d_n_i4I1Wiw9FSFOsf-oIgjhextsgrKPdVterABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY2Izh66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwin2OHrobuXAxVMpGYCHQp0B4vqDRMIjLfi66G7lwMVTKRmAh0KdAeL8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAJBhC0ESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE&num=1&cid=CAQSiAIAQM4h3If1jkac5gZjJmh3JrrDGL0fFediQXDobO3N_g-udKT9WINQEt1_ukoRAlmA9i8WRh8-xlW-QXdlBX5RBi5cUHSFVP7_Ul8T9RvmjJ0T1KfbGlxpfLjIEHFb_jMlwlvvNdYG3R_LT1th0WBvEB6MGsjrIvx-HGqVw7-LGniPvNrXi8kxcwcwaFV6NZbNVgpzp3jc_FqcUIgT4W_dN5Mq5TYoHjYF7ujy-gjgrWpB2_zuPX0A9LqcmVe8w73IuljZKxT-J9BagV9MCOgW1QsbXGz0qi0XyOJhNcuUDPixqNYodYsjYvkB5VvtrDNWyd2DPtdHXXKUk48-gjElCIUR5LWY9ygYAQ&sig=AOD64_36qUTVRIEDr_kIAX5nGnONleMyZA&rf=4&nb=1&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE
+              - link "OPEN" [ref=f6e22] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CpN8sF2HQapjMAszImsMPiuid2AjMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBJ8CT9D8A6WpbKf_unmjnBE_4PkJdIWkgm7TR-XxDTZRwSYB3tSw_um-1fvd6BqGRFLB6RwjO7eXOU-rYWMGo2sXikbr42Mw8zdrtwDkwRdOiv-VK_QBE5AHFGuvk-spY0kvfAcicJhuox7k1poKRueBbEat0o1UMPGCPANJra5R_F0Ene0VFL-fKb8vlV07-Oy5IkkKkP-mfXc-nH7xOqbrUSkCyal4usxsWgM2_MbB59OawtOfAqrkropui02UbFwHyaSbFxnnF_MDdmQF6BN878GtCpCVI1GAJp2HTaGCyXWWRhTB0eQaveAmHzflVi6ZHhiTjYP38zUuYkpaWtWmqz97A8d_n_i4I1Wiw9FSFOsf-oIgjhextsgrKPdVterABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY2Izh66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwin2OHrobuXAxVMpGYCHQp0B4vqDRMIjLfi66G7lwMVTKRmAh0KdAeL8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAJBhC0ESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE&num=1&cid=CAQSiAIAQM4h3If1jkac5gZjJmh3JrrDGL0fFediQXDobO3N_g-udKT9WINQEt1_ukoRAlmA9i8WRh8-xlW-QXdlBX5RBi5cUHSFVP7_Ul8T9RvmjJ0T1KfbGlxpfLjIEHFb_jMlwlvvNdYG3R_LT1th0WBvEB6MGsjrIvx-HGqVw7-LGniPvNrXi8kxcwcwaFV6NZbNVgpzp3jc_FqcUIgT4W_dN5Mq5TYoHjYF7ujy-gjgrWpB2_zuPX0A9LqcmVe8w73IuljZKxT-J9BagV9MCOgW1QsbXGz0qi0XyOJhNcuUDPixqNYodYsjYvkB5VvtrDNWyd2DPtdHXXKUk48-gjElCIUR5LWY9ygYAQ&sig=AOD64_36qUTVRIEDr_kIAX5nGnONleMyZA&rf=4&nb=8&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMI2LPn66G7lwMVTKRmAh0KdAeLEAEYASAAEgIupPD_BwE
+          - generic [ref=f6e26]:
+            - link [ref=f6e28] [cursor=pointer]:
+              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KMhrB3u0QaIbyMuJJpMY79uGBl1-4C97qhI-Y6fXGRrwweTTwXp6ahSfT-nsq46WplYWXMrQR8ehynj1nBnP69MAhFgI3fo4SemQ5d8p-u_pD9993kowH7XWD52mg8SeL0GW0Y08KNaa57qMrFDOStg-MQHd3GwrcPg_YPdaMKPlKlxj61gS3KOFvCAXb1gIoBu2_GGb-s7FruAs2AmS9aAiKswYruxbU4ywdQjWWv8-nnV8QDZeN-Ojha9nJfjgs6D88BLUwB8PKBRm_LcHdaBQ-QvVR8-W65OMHBU-wrR9tlRmB0LwNDol-6TrldbJN0jWSaq9u3UMe4Wo8Dc3lS_BK76bEbMdXjBVcN932Db7lE1lClPK9xJao_vrNvYnvoSQjzuc51nO_yX7KCIKzL8PuDMpO3dW9HmMBv3iQWqPcRNc4pkrV3bKl7NFWWZdOhQybttixCtwIXiicHrINmUeb7_uJVrBALpGJ_t6MKShDRUlgHIOlEzQvi8SsUxHhH1yCM_2Lpo1VI3H9QocIriTqhUoOLDAWQp50dEcw7kbF7g6o8xQmvaAA4ABqIt-7lnLb9OckE6ZEgtK1tysvBNnhykmQ8UX5tOS57Tz7UpiPJOo8-jimCiDQfyH6JiRRu2s6tVjZBs-pK3u5ppOy9BiJ9uHYbMli5kO25U-M3xy0MpSfv1P9gkwwHGfSW3-Gr4tyIQ3xXCAX6BjzFgTjBcjMfu_Jy1tpDdRr_KaO26UKNg4Ibg_OlO5shRa0UvWEGKxfpNvo5Cu5d9Id3cjm4N-FAQ4c10eQHj0VvoY_BfQZr6Hkb8NY8yAs3QxMLvjF-UmAirjvHdJtNUL8y7US_p5Jz1XpmEtdg0aJC7_5kNXsvWSVOxtUvGUvify8erKubyuXdJ_T1ycTuJpnZ4c2ZK2IKE4fISusc8YEE5YtAqPLPwbE2784B44sowthk73vAsZIDlWZDLJv8h2_thDB89Jl_HIKT7VW84LDTtglHmoaPz-wUXDnrseS5iHrN9SVRNxswNVy9LR2HWzSdE4s7CL8ogk0LQ6MV5aSYN6-pd8bk70II9hmCJ9g1Eko9NXc1Qyq-IYrdTS6XeISpZd-K7idwo9Hy1-Rq_Vy3i9pmw89oqHI6PBCY_1SvnPkR_3p6I7nyoPQjIK-NjKwrDYfCAXheXZFWr9nSfgeR27eVMw86aXbY88OEy_IbGndaOje7qfLfJ4GqwOU4BLB9-1GRTrxctMC6UAvfuRFbsRFY4U_U7EOkIBC_MjdYRmGVxdG5om57QZEH9CBCmfUMk_i_VHjUiZQjTmH6AL3oiGmq3NIvxeWgfTsoXd6CoJ5o6WofSLe5jYKXqUYpAG_GlJiWXygVtMPmo-Ywns2UJAoFQBTry-C2lQ4O3B1cEJwKWGoBcLYaXqP8YCDURE2yP8hymRDTNR4hwXn8s1IchZc6faQMcaToHNFStuNzVSlvTyb9ZnwTAgjxhyANkYjzq8fzBECp2fm0XMu31C_BPiSIPSqRc6Dgsn3KPCGuOtMCjnHwz0FhQFlZYr6rVv9SHjZsO0FmS9SClT7yAmBt2DRKLobgsYU496D2xirkq4vG5YUYQ_6qqxXitWrdH12n_lumfmvm8rv8iNz6FTlLgwswV-2Kq2mcjv8LL1INynNxMpjGWA0Q-1snkp7EBnCjxtG2IvwB-oUlfgLRqZ_f_508z4VQCB_RTiMxzP3GgQnr9gF3Td2SCwHxF7kiX8W3J1WnYNuFX-ncbDlE7d7CudR2sAMFQ9PT1empmDWCb22v19FYNRwNFg3qYAQ2KzqhTsPxlIHrL-qOeGuAzHEgtwBAAdugpDikawf6yCv45yeZ6UEvauu6vEp9tjVlqVEPwGm1w_2siNGm6DU4PkH-Pk3dx1Hdpksj4FE_fGIjcwi1fsxCGnAnjwrMNT2BJouu3jKtOPec1KdDyEbIFTeL4Ot1qW-riAaOGcJ74KK0XLviHybKyAaMs1eNMvNrSrziu-ablBUu6Tt8I5XA7GpyCPxIWEE83u8LhtdxGBRQNgBdqnR_fdxEyBmpaVIUrINhQjvHuhm3vQmY2bePFyF28e8FQWUrfPsmOocdhCJ-16W_Kjvj4TWa3VZy-5v7kIBGmTXC2if9ujohXSx6buvY2Std9Tv2RKW_G7iCl_JMT6iCvEcxcXeO9pPTy5Gjgw3dXQN71Nlpyaldm71zHX9LYSAp__nuF8qFOOzDQaU_RXe-mu9nsMbdFdD--JRR0GpKXXR68j9XsmXL69VHTp34VnGLsKCYEfH8K_QSBR8Idde-uuCnViWYm_stLAULGzZy1Jyuwv34ZCtg9KPZlZNtrQ0KFhJ43jngVwv1sJIpjJ2ugZo9jPplFA8o4X-A1tIawSx8Ny0CpdiFzbxJbosGJ6rc0QgBoL37NJCr2ugRyJK_6mKZ8Wd7kYYv0YTs96RVpgwwzv0Ua1x_J3Kh-nRLSZvDRxxFmvgoLjVDXeBFKZM3-qtrlGxK1c9g7MazA0tw_sPX8EZe2ToCN1BU8iyTZE74i-TMoBImrbCm1jdd7izdWuZz0TykawqeDLC5tmyVFT0zaIhcDLc9QwIUPcsKFdp7o76lzoay9ZjT-5ObSyEfG1sc3gl9fBssQJZBHEs-INcSPvB4yKj_S3wap15DHC4Ye4rFljmYM7XnHlb8hgN2P_fE8C1p-qzhA65dAnOw8_tS0NONb4dpFvANopGn4L6ybHYn9IiGo7fSZXo8BQ8g6HWa51unJoTX8HgOg3gYNZN7Ea0XKKtfbPZHL6LCAA_2jcKV6omEAoU8ZMgDdAK1R3vl_7TiM6G6E5xPOJkSv55HFSMxiQx07y70ry4QWART0hCXV809oGZVtfoD8mZRKfu5bL3axB6AohbRaJMyBm0pl9Q78ABv4Ch2vPdFGhKhhSSGO7waNI2FzF6gfN91XPRmzuqivYYY5NX6t3sbfFatPS3K764nKs45-_RJya4MtfZ3ZVbqxdFiQtgxQ1Vb0kCHZcsQkmktSPCshDE3Qn8PptvuTsjITcxfd97hPfUIVaqyzesRAni0TR8rAqlyvhc1AFidpKpi5oHUP9OJRFHSsUEx_AlpmEVKvSFqA6WY4vE1bAw&opi=122715837
+            - link [ref=f6e32] [cursor=pointer]:
+              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KMhrB3u0QaIbyMuJJpMY79uGBl1-4C97qhI-Y6fXGRrwweTTwXp6ahSfT-nsq46WplYWXMrQR8ehynj1nBnP69MAhFgI3fo4SemQ5d8p-u_pD9993kowH7XWD52mg8SeL0GW0Y08KNaa57qMrFDOStg-MQHd3GwrcPg_YPdaMKPlKlxj61gS3KOFvCAXb1gIoBu2_GGb-s7FruAs2AmS9aAiKswYruxbU4ywdQjWWv8-nnV8QDZeN-Ojha9nJfjgs6D88BLUwB8PKBRm_LcHdaBQ-QvVR8-W65OMHBU-wrR9tlRmB0LwNDol-6TrldbJN0jWSaq9u3UMe4Wo8Dc3lS_BK76bEbMdXjBVcN932Db7lE1lClPK9xJao_vrNvYnvoSQjzuc51nO_yX7KCIKzL8PuDMpO3dW9HmMBv3iQWqPcRNc4pkrV3bKl7NFWWZdOhQybttixCtwIXiicHrINmUeb7_uJVrBALpGJ_t6MKShDRUlgHIOlEzQvi8SsUxHhH1yCM_2Lpo1VI3H9QocIriTqhUoOLDAWQp50dEcw7kbF7g6o8xQmvaAA4ABqIt-7lnLb9OckE6ZEgtK1tysvBNnhykmQ8UX5tOS57Tz7UpiPJOo8-jimCiDQfyH6JiRRu2s6tVjZBs-pK3u5ppOy9BiJ9uHYbMli5kO25U-M3xy0MpSfv1P9gkwwHGfSW3-Gr4tyIQ3xXCAX6BjzFgTjBcjMfu_Jy1tpDdRr_KaO26UKNg4Ibg_OlO5shRa0UvWEGKxfpNvo5Cu5d9Id3cjm4N-FAQ4c10eQHj0VvoY_BfQZr6Hkb8NY8yAs3QxMLvjF-UmAirjvHdJtNUL8y7US_p5Jz1XpmEtdg0aJC7_5kNXsvWSVOxtUvGUvify8erKubyuXdJ_T1ycTuJpnZ4c2ZK2IKE4fISusc8YEE5YtAqPLPwbE2784B44sowthk73vAsZIDlWZDLJv8h2_thDB89Jl_HIKT7VW84LDTtglHmoaPz-wUXDnrseS5iHrN9SVRNxswNVy9LR2HWzSdE4s7CL8ogk0LQ6MV5aSYN6-pd8bk70II9hmCJ9g1Eko9NXc1Qyq-IYrdTS6XeISpZd-K7idwo9Hy1-Rq_Vy3i9pmw89oqHI6PBCY_1SvnPkR_3p6I7nyoPQjIK-NjKwrDYfCAXheXZFWr9nSfgeR27eVMw86aXbY88OEy_IbGndaOje7qfLfJ4GqwOU4BLB9-1GRTrxctMC6UAvfuRFbsRFY4U_U7EOkIBC_MjdYRmGVxdG5om57QZEH9CBCmfUMk_i_VHjUiZQjTmH6AL3oiGmq3NIvxeWgfTsoXd6CoJ5o6WofSLe5jYKXqUYpAG_GlJiWXygVtMPmo-Ywns2UJAoFQBTry-C2lQ4O3B1cEJwKWGoBcLYaXqP8YCDURE2yP8hymRDTNR4hwXn8s1IchZc6faQMcaToHNFStuNzVSlvTyb9ZnwTAgjxhyANkYjzq8fzBECp2fm0XMu31C_BPiSIPSqRc6Dgsn3KPCGuOtMCjnHwz0FhQFlZYr6rVv9SHjZsO0FmS9SClT7yAmBt2DRKLobgsYU496D2xirkq4vG5YUYQ_6qqxXitWrdH12n_lumfmvm8rv8iNz6FTlLgwswV-2Kq2mcjv8LL1INynNxMpjGWA0Q-1snkp7EBnCjxtG2IvwB-oUlfgLRqZ_f_508z4VQCB_RTiMxzP3GgQnr9gF3Td2SCwHxF7kiX8W3J1WnYNuFX-ncbDlE7d7CudR2sAMFQ9PT1empmDWCb22v19FYNRwNFg3qYAQ2KzqhTsPxlIHrL-qOeGuAzHEgtwBAAdugpDikawf6yCv45yeZ6UEvauu6vEp9tjVlqVEPwGm1w_2siNGm6DU4PkH-Pk3dx1Hdpksj4FE_fGIjcwi1fsxCGnAnjwrMNT2BJouu3jKtOPec1KdDyEbIFTeL4Ot1qW-riAaOGcJ74KK0XLviHybKyAaMs1eNMvNrSrziu-ablBUu6Tt8I5XA7GpyCPxIWEE83u8LhtdxGBRQNgBdqnR_fdxEyBmpaVIUrINhQjvHuhm3vQmY2bePFyF28e8FQWUrfPsmOocdhCJ-16W_Kjvj4TWa3VZy-5v7kIBGmTXC2if9ujohXSx6buvY2Std9Tv2RKW_G7iCl_JMT6iCvEcxcXeO9pPTy5Gjgw3dXQN71Nlpyaldm71zHX9LYSAp__nuF8qFOOzDQaU_RXe-mu9nsMbdFdD--JRR0GpKXXR68j9XsmXL69VHTp34VnGLsKCYEfH8K_QSBR8Idde-uuCnViWYm_stLAULGzZy1Jyuwv34ZCtg9KPZlZNtrQ0KFhJ43jngVwv1sJIpjJ2ugZo9jPplFA8o4X-A1tIawSx8Ny0CpdiFzbxJbosGJ6rc0QgBoL37NJCr2ugRyJK_6mKZ8Wd7kYYv0YTs96RVpgwwzv0Ua1x_J3Kh-nRLSZvDRxxFmvgoLjVDXeBFKZM3-qtrlGxK1c9g7MazA0tw_sPX8EZe2ToCN1BU8iyTZE74i-TMoBImrbCm1jdd7izdWuZz0TykawqeDLC5tmyVFT0zaIhcDLc9QwIUPcsKFdp7o76lzoay9ZjT-5ObSyEfG1sc3gl9fBssQJZBHEs-INcSPvB4yKj_S3wap15DHC4Ye4rFljmYM7XnHlb8hgN2P_fE8C1p-qzhA65dAnOw8_tS0NONb4dpFvANopGn4L6ybHYn9IiGo7fSZXo8BQ8g6HWa51unJoTX8HgOg3gYNZN7Ea0XKKtfbPZHL6LCAA_2jcKV6omEAoU8ZMgDdAK1R3vl_7TiM6G6E5xPOJkSv55HFSMxiQx07y70ry4QWART0hCXV809oGZVtfoD8mZRKfu5bL3axB6AohbRaJMyBm0pl9Q78ABv4Ch2vPdFGhKhhSSGO7waNI2FzF6gfN91XPRmzuqivYYY5NX6t3sbfFatPS3K764nKs45-_RJya4MtfZ3ZVbqxdFiQtgxQ1Vb0kCHZcsQkmktSPCshDE3Qn8PptvuTsjITcxfd97hPfUIVaqyzesRAni0TR8rAqlyvhc1AFidpKpi5oHUP9OJRFHSsUEx_AlpmEVKvSFqA6WY4vE1bAw&opi=122715837
+          - generic [ref=f6e35] [cursor=pointer]
+          - generic [ref=f6e48]:
+            - generic [ref=f6e49] [cursor=pointer]
+            - generic [ref=f6e53]: Ads by
+            - generic [ref=f6e58]:
+              - generic [ref=f6e59]: Ad options
+              - generic [ref=f6e62]: Send feedback
+              - link [ref=f6e66] [cursor=pointer]:
+                - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KMhrB3u0QaIbyMuJJpMY79uGBl1-4C97qhI-Y6fXGRrwweTTwXp6ahSfT-nsq46WplYWXMrQR8ehynj1nBnP69MAhFgI3fo4SemQ5d8p-u_pD9993kowH7XWD52mg8SeL0GW0Y08KNaa57qMrFDOStg-MQHd3GwrcPg_YPdaMKPlKlxj61gS3KOFvCAXb1gIoBu2_GGb-s7FruAs2AmS9aAiKswYruxbU4ywdQjWWv8-nnV8QDZeN-Ojha9nJfjgs6D88BLUwB8PKBRm_LcHdaBQ-QvVR8-W65OMHBU-wrR9tlRmB0LwNDol-6TrldbJN0jWSaq9u3UMe4Wo8Dc3lS_BK76bEbMdXjBVcN932Db7lE1lClPK9xJao_vrNvYnvoSQjzuc51nO_yX7KCIKzL8PuDMpO3dW9HmMBv3iQWqPcRNc4pkrV3bKl7NFWWZdOhQybttixCtwIXiicHrINmUeb7_uJVrBALpGJ_t6MKShDRUlgHIOlEzQvi8SsUxHhH1yCM_2Lpo1VI3H9QocIriTqhUoOLDAWQp50dEcw7kbF7g6o8xQmvaAA4ABqIt-7lnLb9OckE6ZEgtK1tysvBNnhykmQ8UX5tOS57Tz7UpiPJOo8-jimCiDQfyH6JiRRu2s6tVjZBs-pK3u5ppOy9BiJ9uHYbMli5kO25U-M3xy0MpSfv1P9gkwwHGfSW3-Gr4tyIQ3xXCAX6BjzFgTjBcjMfu_Jy1tpDdRr_KaO26UKNg4Ibg_OlO5shRa0UvWEGKxfpNvo5Cu5d9Id3cjm4N-FAQ4c10eQHj0VvoY_BfQZr6Hkb8NY8yAs3QxMLvjF-UmAirjvHdJtNUL8y7US_p5Jz1XpmEtdg0aJC7_5kNXsvWSVOxtUvGUvify8erKubyuXdJ_T1ycTuJpnZ4c2ZK2IKE4fISusc8YEE5YtAqPLPwbE2784B44sowthk73vAsZIDlWZDLJv8h2_thDB89Jl_HIKT7VW84LDTtglHmoaPz-wUXDnrseS5iHrN9SVRNxswNVy9LR2HWzSdE4s7CL8ogk0LQ6MV5aSYN6-pd8bk70II9hmCJ9g1Eko9NXc1Qyq-IYrdTS6XeISpZd-K7idwo9Hy1-Rq_Vy3i9pmw89oqHI6PBCY_1SvnPkR_3p6I7nyoPQjIK-NjKwrDYfCAXheXZFWr9nSfgeR27eVMw86aXbY88OEy_IbGndaOje7qfLfJ4GqwOU4BLB9-1GRTrxctMC6UAvfuRFbsRFY4U_U7EOkIBC_MjdYRmGVxdG5om57QZEH9CBCmfUMk_i_VHjUiZQjTmH6AL3oiGmq3NIvxeWgfTsoXd6CoJ5o6WofSLe5jYKXqUYpAG_GlJiWXygVtMPmo-Ywns2UJAoFQBTry-C2lQ4O3B1cEJwKWGoBcLYaXqP8YCDURE2yP8hymRDTNR4hwXn8s1IchZc6faQMcaToHNFStuNzVSlvTyb9ZnwTAgjxhyANkYjzq8fzBECp2fm0XMu31C_BPiSIPSqRc6Dgsn3KPCGuOtMCjnHwz0FhQFlZYr6rVv9SHjZsO0FmS9SClT7yAmBt2DRKLobgsYU496D2xirkq4vG5YUYQ_6qqxXitWrdH12n_lumfmvm8rv8iNz6FTlLgwswV-2Kq2mcjv8LL1INynNxMpjGWA0Q-1snkp7EBnCjxtG2IvwB-oUlfgLRqZ_f_508z4VQCB_RTiMxzP3GgQnr9gF3Td2SCwHxF7kiX8W3J1WnYNuFX-ncbDlE7d7CudR2sAMFQ9PT1empmDWCb22v19FYNRwNFg3qYAQ2KzqhTsPxlIHrL-qOeGuAzHEgtwBAAdugpDikawf6yCv45yeZ6UEvauu6vEp9tjVlqVEPwGm1w_2siNGm6DU4PkH-Pk3dx1Hdpksj4FE_fGIjcwi1fsxCGnAnjwrMNT2BJouu3jKtOPec1KdDyEbIFTeL4Ot1qW-riAaOGcJ74KK0XLviHybKyAaMs1eNMvNrSrziu-ablBUu6Tt8I5XA7GpyCPxIWEE83u8LhtdxGBRQNgBdqnR_fdxEyBmpaVIUrINhQjvHuhm3vQmY2bePFyF28e8FQWUrfPsmOocdhCJ-16W_Kjvj4TWa3VZy-5v7kIBGmTXC2if9ujohXSx6buvY2Std9Tv2RKW_G7iCl_JMT6iCvEcxcXeO9pPTy5Gjgw3dXQN71Nlpyaldm71zHX9LYSAp__nuF8qFOOzDQaU_RXe-mu9nsMbdFdD--JRR0GpKXXR68j9XsmXL69VHTp34VnGLsKCYEfH8K_QSBR8Idde-uuCnViWYm_stLAULGzZy1Jyuwv34ZCtg9KPZlZNtrQ0KFhJ43jngVwv1sJIpjJ2ugZo9jPplFA8o4X-A1tIawSx8Ny0CpdiFzbxJbosGJ6rc0QgBoL37NJCr2ugRyJK_6mKZ8Wd7kYYv0YTs96RVpgwwzv0Ua1x_J3Kh-nRLSZvDRxxFmvgoLjVDXeBFKZM3-qtrlGxK1c9g7MazA0tw_sPX8EZe2ToCN1BU8iyTZE74i-TMoBImrbCm1jdd7izdWuZz0TykawqeDLC5tmyVFT0zaIhcDLc9QwIUPcsKFdp7o76lzoay9ZjT-5ObSyEfG1sc3gl9fBssQJZBHEs-INcSPvB4yKj_S3wap15DHC4Ye4rFljmYM7XnHlb8hgN2P_fE8C1p-qzhA65dAnOw8_tS0NONb4dpFvANopGn4L6ybHYn9IiGo7fSZXo8BQ8g6HWa51unJoTX8HgOg3gYNZN7Ea0XKKtfbPZHL6LCAA_2jcKV6omEAoU8ZMgDdAK1R3vl_7TiM6G6E5xPOJkSv55HFSMxiQx07y70ry4QWART0hCXV809oGZVtfoD8mZRKfu5bL3axB6AohbRaJMyBm0pl9Q78ABv4Ch2vPdFGhKhhSSGO7waNI2FzF6gfN91XPRmzuqivYYY5NX6t3sbfFatPS3K764nKs45-_RJya4MtfZ3ZVbqxdFiQtgxQ1Vb0kCHZcsQkmktSPCshDE3Qn8PptvuTsjITcxfd97hPfUIVaqyzesRAni0TR8rAqlyvhc1AFidpKpi5oHUP9OJRFHSsUEx_AlpmEVKvSFqA6WY4vE1bAw&opi=122715837
+                - generic [ref=f6e67]: Why this ad?
+          - generic [ref=f6e70]:
+            - generic [ref=f6e71] [cursor=pointer]: Not interested in this ad
+            - generic [ref=f6e74] [cursor=pointer]: Ad was inappropriate
+            - generic [ref=f6e77] [cursor=pointer]: Seen this ad multiple times
+            - generic [ref=f6e80] [cursor=pointer]: Ad covered content
+          - generic [ref=f6e83]: Thanks. Feedback improves Google ads
+          - generic [ref=f6e89]: Ad closed by
+          - generic [ref=f6e102]:
+            - generic [ref=f6e103] [cursor=pointer]
+            - generic [ref=f6e107]:
+              - generic [ref=f6e109]:
+                - text: Personalize ads on this site
+                - generic [ref=f6e111] [cursor=pointer]
+              - link [ref=f6e113] [cursor=pointer]:
+                - /url: https://support.google.com/ads/answer/10923348
+                - generic [ref=f6e114]: Learn more
+    - generic [ref=e279]:
+      - iframe [ref=e282]:
+        - generic [ref=f5e1]:
+          - generic [ref=f5e4]:
+            - generic [ref=f5e5]:
+              - generic "Cert Masterclass" [ref=f5e6]:
+                - link "Get 7 Days Free" [ref=f5e8] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CmPAgFmHQapSWL-bEmsMPtvqKsALMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9C3qVU0a2EVhIE4aXGfmH492-DsVhtm9VyBjeUDfO6sDmW2GdYpWfBcwv3nxvAV3_bur1xzzLVB9Pngc2_LyPhqyGpKjZGV2xwOr7FxDn7QKQAnPwPhUKNg1b_5wbHpl_HDgyBqkPGdoe3BleBrAyXAZwZOo6aZg8DVMsieavb6fNcQgJfX2OISgH7gBpwqIHPv4qSaE2jdWo9sKLXQUdnclCl5B4v3702uo0ELYQlQESEO-uW3MJhrXKHvZx7fX8LbqrdKg38vb0qWLUEhyXIFPNxhvX7BPMhGGvWL2acvfeVSsvUrMqi3kO1R315EG15qLHnWiGhIk_JLg5ISy5WBSA-681ZxY7i6txhZwWO6B3i2cKbNZZQoN7jTcbLEP5DABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY5-7T66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwihpNTrobuXAxVmomYCHTa9AibqDRMI_b3V66G7lwMVZqJmAh02vQIm8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAEgmBUESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE&num=1&cid=CAQShwIAQM4h3M4i744xwHpyCx-9XxmCOQ02LBgk28VXDuH7Itc7Uhbearv2tvFKB82xKMbeQ2rDNO8Z-rkZ9HEfwAIaajko9jB0gY2xycKykFahso0hHurQkvr1gqi5aAk73Xv6Qa8R7CVsqJiMsLOVx0D-7yg3-uo3ry333ZsUoPd8i1BQw5lztII3LiC2dRsz95cnjIRgOFXTIt6hzmBim1POKnhmmh9t4VdsAWDkptA7fsXsMLkoqm-TBroXNteCjoayyahUYhHDnFE30_j1mbg6gap48PiJo7jqWg6bozwyaEASC9tJW9QEzifD6rXzjb9_u84GOvJRx6rLuKmMdFPDdyILk7faVBgB&sig=AOD64_2V5jWiVkvKPKDtLmersRYKP9ZcoQ&rf=4&nb=0&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE
+              - generic "Cert Masterclass" [ref=f5e9]:
+                - link "Eliminate the Guesswork" [ref=f5e10] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CmPAgFmHQapSWL-bEmsMPtvqKsALMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9C3qVU0a2EVhIE4aXGfmH492-DsVhtm9VyBjeUDfO6sDmW2GdYpWfBcwv3nxvAV3_bur1xzzLVB9Pngc2_LyPhqyGpKjZGV2xwOr7FxDn7QKQAnPwPhUKNg1b_5wbHpl_HDgyBqkPGdoe3BleBrAyXAZwZOo6aZg8DVMsieavb6fNcQgJfX2OISgH7gBpwqIHPv4qSaE2jdWo9sKLXQUdnclCl5B4v3702uo0ELYQlQESEO-uW3MJhrXKHvZx7fX8LbqrdKg38vb0qWLUEhyXIFPNxhvX7BPMhGGvWL2acvfeVSsvUrMqi3kO1R315EG15qLHnWiGhIk_JLg5ISy5WBSA-681ZxY7i6txhZwWO6B3i2cKbNZZQoN7jTcbLEP5DABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY5-7T66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwihpNTrobuXAxVmomYCHTa9AibqDRMI_b3V66G7lwMVZqJmAh02vQIm8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAEgmBUESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE&num=1&cid=CAQShwIAQM4h3M4i744xwHpyCx-9XxmCOQ02LBgk28VXDuH7Itc7Uhbearv2tvFKB82xKMbeQ2rDNO8Z-rkZ9HEfwAIaajko9jB0gY2xycKykFahso0hHurQkvr1gqi5aAk73Xv6Qa8R7CVsqJiMsLOVx0D-7yg3-uo3ry333ZsUoPd8i1BQw5lztII3LiC2dRsz95cnjIRgOFXTIt6hzmBim1POKnhmmh9t4VdsAWDkptA7fsXsMLkoqm-TBroXNteCjoayyahUYhHDnFE30_j1mbg6gap48PiJo7jqWg6bozwyaEASC9tJW9QEzifD6rXzjb9_u84GOvJRx6rLuKmMdFPDdyILk7faVBgB&sig=AOD64_2V5jWiVkvKPKDtLmersRYKP9ZcoQ&rf=4&nb=0&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE
+              - link "Skip the guesswork. Follow a structured video course built around the exam. Just $29" [ref=f5e12] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CmPAgFmHQapSWL-bEmsMPtvqKsALMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9C3qVU0a2EVhIE4aXGfmH492-DsVhtm9VyBjeUDfO6sDmW2GdYpWfBcwv3nxvAV3_bur1xzzLVB9Pngc2_LyPhqyGpKjZGV2xwOr7FxDn7QKQAnPwPhUKNg1b_5wbHpl_HDgyBqkPGdoe3BleBrAyXAZwZOo6aZg8DVMsieavb6fNcQgJfX2OISgH7gBpwqIHPv4qSaE2jdWo9sKLXQUdnclCl5B4v3702uo0ELYQlQESEO-uW3MJhrXKHvZx7fX8LbqrdKg38vb0qWLUEhyXIFPNxhvX7BPMhGGvWL2acvfeVSsvUrMqi3kO1R315EG15qLHnWiGhIk_JLg5ISy5WBSA-681ZxY7i6txhZwWO6B3i2cKbNZZQoN7jTcbLEP5DABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY5-7T66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwihpNTrobuXAxVmomYCHTa9AibqDRMI_b3V66G7lwMVZqJmAh02vQIm8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAEgmBUESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE&num=1&cid=CAQShwIAQM4h3M4i744xwHpyCx-9XxmCOQ02LBgk28VXDuH7Itc7Uhbearv2tvFKB82xKMbeQ2rDNO8Z-rkZ9HEfwAIaajko9jB0gY2xycKykFahso0hHurQkvr1gqi5aAk73Xv6Qa8R7CVsqJiMsLOVx0D-7yg3-uo3ry333ZsUoPd8i1BQw5lztII3LiC2dRsz95cnjIRgOFXTIt6hzmBim1POKnhmmh9t4VdsAWDkptA7fsXsMLkoqm-TBroXNteCjoayyahUYhHDnFE30_j1mbg6gap48PiJo7jqWg6bozwyaEASC9tJW9QEzifD6rXzjb9_u84GOvJRx6rLuKmMdFPDdyILk7faVBgB&sig=AOD64_2V5jWiVkvKPKDtLmersRYKP9ZcoQ&rf=4&nb=7&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE
+                - text: Skip the guesswork. Follow a structuredvideo course built around the exam. Just$29
+              - generic "Cert Masterclass" [ref=f5e13]:
+                - link "Cert Masterclass" [ref=f5e14] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CmPAgFmHQapSWL-bEmsMPtvqKsALMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9C3qVU0a2EVhIE4aXGfmH492-DsVhtm9VyBjeUDfO6sDmW2GdYpWfBcwv3nxvAV3_bur1xzzLVB9Pngc2_LyPhqyGpKjZGV2xwOr7FxDn7QKQAnPwPhUKNg1b_5wbHpl_HDgyBqkPGdoe3BleBrAyXAZwZOo6aZg8DVMsieavb6fNcQgJfX2OISgH7gBpwqIHPv4qSaE2jdWo9sKLXQUdnclCl5B4v3702uo0ELYQlQESEO-uW3MJhrXKHvZx7fX8LbqrdKg38vb0qWLUEhyXIFPNxhvX7BPMhGGvWL2acvfeVSsvUrMqi3kO1R315EG15qLHnWiGhIk_JLg5ISy5WBSA-681ZxY7i6txhZwWO6B3i2cKbNZZQoN7jTcbLEP5DABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY5-7T66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwihpNTrobuXAxVmomYCHTa9AibqDRMI_b3V66G7lwMVZqJmAh02vQIm8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAEgmBUESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE&num=1&cid=CAQShwIAQM4h3M4i744xwHpyCx-9XxmCOQ02LBgk28VXDuH7Itc7Uhbearv2tvFKB82xKMbeQ2rDNO8Z-rkZ9HEfwAIaajko9jB0gY2xycKykFahso0hHurQkvr1gqi5aAk73Xv6Qa8R7CVsqJiMsLOVx0D-7yg3-uo3ry333ZsUoPd8i1BQw5lztII3LiC2dRsz95cnjIRgOFXTIt6hzmBim1POKnhmmh9t4VdsAWDkptA7fsXsMLkoqm-TBroXNteCjoayyahUYhHDnFE30_j1mbg6gap48PiJo7jqWg6bozwyaEASC9tJW9QEzifD6rXzjb9_u84GOvJRx6rLuKmMdFPDdyILk7faVBgB&sig=AOD64_2V5jWiVkvKPKDtLmersRYKP9ZcoQ&rf=4&nb=1&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE
+            - link "OPEN" [ref=f5e18] [cursor=pointer]:
+              - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CmPAgFmHQapSWL-bEmsMPtvqKsALMiMuPigGwg633kha1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9C3qVU0a2EVhIE4aXGfmH492-DsVhtm9VyBjeUDfO6sDmW2GdYpWfBcwv3nxvAV3_bur1xzzLVB9Pngc2_LyPhqyGpKjZGV2xwOr7FxDn7QKQAnPwPhUKNg1b_5wbHpl_HDgyBqkPGdoe3BleBrAyXAZwZOo6aZg8DVMsieavb6fNcQgJfX2OISgH7gBpwqIHPv4qSaE2jdWo9sKLXQUdnclCl5B4v3702uo0ELYQlQESEO-uW3MJhrXKHvZx7fX8LbqrdKg38vb0qWLUEhyXIFPNxhvX7BPMhGGvWL2acvfeVSsvUrMqi3kO1R315EG15qLHnWiGhIk_JLg5ISy5WBSA-681ZxY7i6txhZwWO6B3i2cKbNZZQoN7jTcbLEP5DABN_cpLL6BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY5-7T66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJVXo_eRbRmfaACgOYCwHICwGqDQJJTsgNAeINEwihpNTrobuXAxVmomYCHTa9AibqDRMI_b3V66G7lwMVZqJmAh02vQIm8A0CiA7___________8B2BMNiBQE0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAEgmBUESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE&num=1&cid=CAQShwIAQM4h3M4i744xwHpyCx-9XxmCOQ02LBgk28VXDuH7Itc7Uhbearv2tvFKB82xKMbeQ2rDNO8Z-rkZ9HEfwAIaajko9jB0gY2xycKykFahso0hHurQkvr1gqi5aAk73Xv6Qa8R7CVsqJiMsLOVx0D-7yg3-uo3ry333ZsUoPd8i1BQw5lztII3LiC2dRsz95cnjIRgOFXTIt6hzmBim1POKnhmmh9t4VdsAWDkptA7fsXsMLkoqm-TBroXNteCjoayyahUYhHDnFE30_j1mbg6gap48PiJo7jqWg6bozwyaEASC9tJW9QEzifD6rXzjb9_u84GOvJRx6rLuKmMdFPDdyILk7faVBgB&sig=AOD64_2V5jWiVkvKPKDtLmersRYKP9ZcoQ&rf=4&nb=8&adurl=https://www.certmasterclass.com/certification/claude-certified-developer-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMIlPnW66G7lwMVZqJmAh02vQImEAEYASAAEgLgL_D_BwE
+          - generic [ref=f5e22]:
+            - link [ref=f5e24] [cursor=pointer]:
+              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KPxoXqmPu9jyhkNgW0Oo2-bXVkspSOrf7vN-jjmGgE3WAq7bgb0PmIjSM3vG3CANlDr1J2wkwEpINRWlx10UA1hdtEDQjklbYgPtrtqQtaH2FfKgi5kBgkOFecIJBDgY5iftSSWfaBRgUTXaDx27mOUla6-OwEdnIvKyCi8bI15Gd3yiFwzMoK_vV2BRb0FAltRA2YmJQ2lRjXDQhTl5lpEZaT-n0QaynSgCBNZ4RZ1kJ5frs972ed4h_w_fepmPg7DN59qkVmSwbB8pReN-myvMUXZHSeL9k8UHEEM6mLmO-x3kejRGGFhLmFKCcN84k8Nu0cu1t49cHl3wcoJ3Uuxu10SxhFTAalmHrC0yk4eHXFYjuoQV91Ayafjn9ebZwSc9p2Lhm_CWEi2WWmZR_9AQt929QTJA2HzbkYJznb40QBT4dXbmUl2kSw2cP3fxFUhQRPKygG__0qDYlSDrMfqhvM-oJCtW6s7bz8v9wZyl0yQXX0JLej3d4us4J012GVOp56waPTsJxAh2tsMBwNtIpjaiurI6kZ7g7Iilpbit6PUKN9lkx13nipzlyE1P2zA8Ck_-5gxzSbfMobbEMQYPjK_5o9I3D4EZpY7dd848P4OA-2zVYnHlKBRLlQ6PpxKqnrsAJVhH_MuRugwIi57Va2jQ6vttrP48U1h2G3xJTQyZBMFKGSt-YOteZN3etjqrNlE-Wm3C7M-QugSGc2DrdKJzXmqHAfGn7EV2ha7bi1gtpEWASaVpZVx6O-wW6AwFzmD9Bydvw4Q9dQ66MFl3h2aswVap4on76qhMavmE2hplSyx7b7ECr5WA4AH8qC6XzyhyVEgU6oubJzU2WB5uqoVwhdLnIdhpEYYxACGKMc1tRIVlVY3z8s3fdsUdoGbgJeX6VtwlrFRCfRTfzDvs7pphPYxgHAYYD7zQlkobbujDzrrbmS0gTBhq5hOtdJiyLeKo5nQkhEBYVJDCDwwb0Yr3IRNdPv1k86O-ghHsH9F1_VeCMVe3RkyE_vryPycwvuGGeiDHV9iSls8NkDIq39ftP08NLoNkH_EBPDADSZj4aIWDLK7s1kCHqJA57b1Gs0lr61XsjB6bXipB3PPRjIqI1ic2bRHVLGW0W3dCpmjUyZVlLzDMNv17Hbg5bQwlIvzpp0V5UpYMhVZP3aqu4hCVV5SMXprgrZMNa1LzJmakTzXc99pvBVW0tqbUUWb1mu9lbM--z2c7kHAIFQ9ZakIlx_RnicwBfdtDhEF0oy5QC-Jk5LJSVuqtjg3TJTPz1Eh4xEh4GsAGkOL4CgqTOd2o7xOIKeleoYV_0G9U1SI8sRgc9D4HPbP-jMfNdGoxucAUm5F1jbBtbxEhsw40KiKsX7eBnAzNhBH0RZ6oyfQLrB4F6HaMvYbFZFtNsRwGG_saXZYVqTAtPG0q6A-a82kF7-_dq41SXCkJsUoxKe-RPaXBYPeLU_HC6SiKpzKBoRgJoyuI-FiqzLkEwfqH0RcZD6zUTpnVysVJ7aA_7Eb6dfrXM3-wLS35uDaTkWzFIaULGdrl4uHa6nuiNmmZ8cm3OVq4G8hNZxFQRs1UeN-qtruGCdue3JhDbJChjc1rJvwhKsjRdNp1YXHknvXn8-GiY4lLNgClIoT1vzHB-3nNVLuw41qZazcXj263ST6Hkm-RSM_jWfP6AvVbb3UfQYnQOBlgXiN3N0hoZrBBkroBSSRTDqwSHeRJMJ2xJgckDxsoIgpeqsGshRAvZH1W3imB-rP_nu7CEGS1JJNZr5TXIHlgxXqHGjW30jEMCHRNbnvNrpUS7Hy4EL9fohOaOfCRgM7h-liZ7agMXKijSxYxTLC-_G8xI7t7wzFn8Ulxyqlkm1xDGcs_XsJN_DAiid395yS9dzX4JnGU_ZV20HxMx0YZaSFu170ZhQJcq3RgXIxHc5UNW-X4ZQKeOHRK6pXVO_-R6qK_JJpXtnWV3__l6y9K88JOAhQd7JxHGGLc8MuV7_xh_9xhImGBPi8sGtwPHv84uDIu9W5AQoCWm6wlkcVToYmKC9D4UxeCNXvaHGopBwj6h7MvPKaiy4u9T9wASSljlaee8x-7LGx39YXX4zipRAWhk3cl1kDm7sugQw6xR4ciqtwPh3kEkUP03Z78-aA1CThlJzXJhyZ6k9Q3hwX2oiofpfCFadK_4cG7QOv_16TorWi16ET2i1G-DkquQteuF3eo2PDBS1T81BvqSQhA_h_tFJm6gCnnPkkyenqQIzcrp8q7xH_BCPxQyU9jwPUjUdvUfwITcpM1UR40bfbDh_R77s7pBNAOEYZPKvRTNcoYkrVA8pWxuZ58rCqgBEODqNQTXiH9vuOB3VtywyXCP8ne5K_ND3nz3vr_Tvo9qa1uS_V9mquEYDjzlAQXw32pYFQN3BQ3lFVByd7ic42xBzXOmO72geQ12t8Gl1wq3uRfaLEcucA8C6s07lzWDDcDNa5_MV1kybx-lT7Uul16gJb8kM2xs2D1UT8HU1dfwkOf-WRB0lLGYzBEce7cdAJdgn5PAf1GaNeV2cTpBTQKnahtHMehbtHVZwwU1GoTSd3r-ovK352O7JRN0ZdKw-RiRx83euydpIIq177y5lvjXS937Zn9IGGE6lkcWINvIoYWN0Rjg6OFiOkNXDBm38qFZvzNHKrHLEEaQGwiaaxfzoLlf1vcPMkTiBX4HGQ1MxSaYH3yvU6XtgSinVbGlmc0AgN_OiwdEh57sJ3oKadIyqQzq_jObJ7Nk_K2HgShN3XrKd7-5MzNQNvOubsSsXjKsDCyZhUyd4qW01Ec0_b3Qrg7Imjkvv9VeeIBEFvrcyoKA99MpelUZgiRSxvn1_HvBAUx6VWmjkPrH_J5F7QljcPExq_Nt7Se26IGWBZQQi-b7M7qkT4NqYOyMp4QNnpuWjo15RN0IRsicPp5wfkB60PWhS5OhW1dhfqMdv3ddl1h_QJ_3RLhT7g03NeO5bYyj__PDJPgUvVemfZtFwqpXCUdR2kerG2T5WuYr5kLtcpn-vseuW9zR8E5TKKgDhuFAVLdsb_iGj2QRhrfkdemzuCq4Na_VX2gcLV_GoGZk7cwOQ9eqSZlx-tgfhzoh8D9jlZSbA0zGl45_M1n3nY&opi=122715837
+            - link [ref=f5e28] [cursor=pointer]:
+              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KPxoXqmPu9jyhkNgW0Oo2-bXVkspSOrf7vN-jjmGgE3WAq7bgb0PmIjSM3vG3CANlDr1J2wkwEpINRWlx10UA1hdtEDQjklbYgPtrtqQtaH2FfKgi5kBgkOFecIJBDgY5iftSSWfaBRgUTXaDx27mOUla6-OwEdnIvKyCi8bI15Gd3yiFwzMoK_vV2BRb0FAltRA2YmJQ2lRjXDQhTl5lpEZaT-n0QaynSgCBNZ4RZ1kJ5frs972ed4h_w_fepmPg7DN59qkVmSwbB8pReN-myvMUXZHSeL9k8UHEEM6mLmO-x3kejRGGFhLmFKCcN84k8Nu0cu1t49cHl3wcoJ3Uuxu10SxhFTAalmHrC0yk4eHXFYjuoQV91Ayafjn9ebZwSc9p2Lhm_CWEi2WWmZR_9AQt929QTJA2HzbkYJznb40QBT4dXbmUl2kSw2cP3fxFUhQRPKygG__0qDYlSDrMfqhvM-oJCtW6s7bz8v9wZyl0yQXX0JLej3d4us4J012GVOp56waPTsJxAh2tsMBwNtIpjaiurI6kZ7g7Iilpbit6PUKN9lkx13nipzlyE1P2zA8Ck_-5gxzSbfMobbEMQYPjK_5o9I3D4EZpY7dd848P4OA-2zVYnHlKBRLlQ6PpxKqnrsAJVhH_MuRugwIi57Va2jQ6vttrP48U1h2G3xJTQyZBMFKGSt-YOteZN3etjqrNlE-Wm3C7M-QugSGc2DrdKJzXmqHAfGn7EV2ha7bi1gtpEWASaVpZVx6O-wW6AwFzmD9Bydvw4Q9dQ66MFl3h2aswVap4on76qhMavmE2hplSyx7b7ECr5WA4AH8qC6XzyhyVEgU6oubJzU2WB5uqoVwhdLnIdhpEYYxACGKMc1tRIVlVY3z8s3fdsUdoGbgJeX6VtwlrFRCfRTfzDvs7pphPYxgHAYYD7zQlkobbujDzrrbmS0gTBhq5hOtdJiyLeKo5nQkhEBYVJDCDwwb0Yr3IRNdPv1k86O-ghHsH9F1_VeCMVe3RkyE_vryPycwvuGGeiDHV9iSls8NkDIq39ftP08NLoNkH_EBPDADSZj4aIWDLK7s1kCHqJA57b1Gs0lr61XsjB6bXipB3PPRjIqI1ic2bRHVLGW0W3dCpmjUyZVlLzDMNv17Hbg5bQwlIvzpp0V5UpYMhVZP3aqu4hCVV5SMXprgrZMNa1LzJmakTzXc99pvBVW0tqbUUWb1mu9lbM--z2c7kHAIFQ9ZakIlx_RnicwBfdtDhEF0oy5QC-Jk5LJSVuqtjg3TJTPz1Eh4xEh4GsAGkOL4CgqTOd2o7xOIKeleoYV_0G9U1SI8sRgc9D4HPbP-jMfNdGoxucAUm5F1jbBtbxEhsw40KiKsX7eBnAzNhBH0RZ6oyfQLrB4F6HaMvYbFZFtNsRwGG_saXZYVqTAtPG0q6A-a82kF7-_dq41SXCkJsUoxKe-RPaXBYPeLU_HC6SiKpzKBoRgJoyuI-FiqzLkEwfqH0RcZD6zUTpnVysVJ7aA_7Eb6dfrXM3-wLS35uDaTkWzFIaULGdrl4uHa6nuiNmmZ8cm3OVq4G8hNZxFQRs1UeN-qtruGCdue3JhDbJChjc1rJvwhKsjRdNp1YXHknvXn8-GiY4lLNgClIoT1vzHB-3nNVLuw41qZazcXj263ST6Hkm-RSM_jWfP6AvVbb3UfQYnQOBlgXiN3N0hoZrBBkroBSSRTDqwSHeRJMJ2xJgckDxsoIgpeqsGshRAvZH1W3imB-rP_nu7CEGS1JJNZr5TXIHlgxXqHGjW30jEMCHRNbnvNrpUS7Hy4EL9fohOaOfCRgM7h-liZ7agMXKijSxYxTLC-_G8xI7t7wzFn8Ulxyqlkm1xDGcs_XsJN_DAiid395yS9dzX4JnGU_ZV20HxMx0YZaSFu170ZhQJcq3RgXIxHc5UNW-X4ZQKeOHRK6pXVO_-R6qK_JJpXtnWV3__l6y9K88JOAhQd7JxHGGLc8MuV7_xh_9xhImGBPi8sGtwPHv84uDIu9W5AQoCWm6wlkcVToYmKC9D4UxeCNXvaHGopBwj6h7MvPKaiy4u9T9wASSljlaee8x-7LGx39YXX4zipRAWhk3cl1kDm7sugQw6xR4ciqtwPh3kEkUP03Z78-aA1CThlJzXJhyZ6k9Q3hwX2oiofpfCFadK_4cG7QOv_16TorWi16ET2i1G-DkquQteuF3eo2PDBS1T81BvqSQhA_h_tFJm6gCnnPkkyenqQIzcrp8q7xH_BCPxQyU9jwPUjUdvUfwITcpM1UR40bfbDh_R77s7pBNAOEYZPKvRTNcoYkrVA8pWxuZ58rCqgBEODqNQTXiH9vuOB3VtywyXCP8ne5K_ND3nz3vr_Tvo9qa1uS_V9mquEYDjzlAQXw32pYFQN3BQ3lFVByd7ic42xBzXOmO72geQ12t8Gl1wq3uRfaLEcucA8C6s07lzWDDcDNa5_MV1kybx-lT7Uul16gJb8kM2xs2D1UT8HU1dfwkOf-WRB0lLGYzBEce7cdAJdgn5PAf1GaNeV2cTpBTQKnahtHMehbtHVZwwU1GoTSd3r-ovK352O7JRN0ZdKw-RiRx83euydpIIq177y5lvjXS937Zn9IGGE6lkcWINvIoYWN0Rjg6OFiOkNXDBm38qFZvzNHKrHLEEaQGwiaaxfzoLlf1vcPMkTiBX4HGQ1MxSaYH3yvU6XtgSinVbGlmc0AgN_OiwdEh57sJ3oKadIyqQzq_jObJ7Nk_K2HgShN3XrKd7-5MzNQNvOubsSsXjKsDCyZhUyd4qW01Ec0_b3Qrg7Imjkvv9VeeIBEFvrcyoKA99MpelUZgiRSxvn1_HvBAUx6VWmjkPrH_J5F7QljcPExq_Nt7Se26IGWBZQQi-b7M7qkT4NqYOyMp4QNnpuWjo15RN0IRsicPp5wfkB60PWhS5OhW1dhfqMdv3ddl1h_QJ_3RLhT7g03NeO5bYyj__PDJPgUvVemfZtFwqpXCUdR2kerG2T5WuYr5kLtcpn-vseuW9zR8E5TKKgDhuFAVLdsb_iGj2QRhrfkdemzuCq4Na_VX2gcLV_GoGZk7cwOQ9eqSZlx-tgfhzoh8D9jlZSbA0zGl45_M1n3nY&opi=122715837
+          - generic [ref=f5e31] [cursor=pointer]
+          - generic [ref=f5e44]:
+            - generic [ref=f5e45] [cursor=pointer]
+            - generic [ref=f5e49]: Ads by
+            - generic [ref=f5e54]:
+              - generic [ref=f5e55]: Ad options
+              - generic [ref=f5e58]: Send feedback
+              - link [ref=f5e62] [cursor=pointer]:
+                - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KPxoXqmPu9jyhkNgW0Oo2-bXVkspSOrf7vN-jjmGgE3WAq7bgb0PmIjSM3vG3CANlDr1J2wkwEpINRWlx10UA1hdtEDQjklbYgPtrtqQtaH2FfKgi5kBgkOFecIJBDgY5iftSSWfaBRgUTXaDx27mOUla6-OwEdnIvKyCi8bI15Gd3yiFwzMoK_vV2BRb0FAltRA2YmJQ2lRjXDQhTl5lpEZaT-n0QaynSgCBNZ4RZ1kJ5frs972ed4h_w_fepmPg7DN59qkVmSwbB8pReN-myvMUXZHSeL9k8UHEEM6mLmO-x3kejRGGFhLmFKCcN84k8Nu0cu1t49cHl3wcoJ3Uuxu10SxhFTAalmHrC0yk4eHXFYjuoQV91Ayafjn9ebZwSc9p2Lhm_CWEi2WWmZR_9AQt929QTJA2HzbkYJznb40QBT4dXbmUl2kSw2cP3fxFUhQRPKygG__0qDYlSDrMfqhvM-oJCtW6s7bz8v9wZyl0yQXX0JLej3d4us4J012GVOp56waPTsJxAh2tsMBwNtIpjaiurI6kZ7g7Iilpbit6PUKN9lkx13nipzlyE1P2zA8Ck_-5gxzSbfMobbEMQYPjK_5o9I3D4EZpY7dd848P4OA-2zVYnHlKBRLlQ6PpxKqnrsAJVhH_MuRugwIi57Va2jQ6vttrP48U1h2G3xJTQyZBMFKGSt-YOteZN3etjqrNlE-Wm3C7M-QugSGc2DrdKJzXmqHAfGn7EV2ha7bi1gtpEWASaVpZVx6O-wW6AwFzmD9Bydvw4Q9dQ66MFl3h2aswVap4on76qhMavmE2hplSyx7b7ECr5WA4AH8qC6XzyhyVEgU6oubJzU2WB5uqoVwhdLnIdhpEYYxACGKMc1tRIVlVY3z8s3fdsUdoGbgJeX6VtwlrFRCfRTfzDvs7pphPYxgHAYYD7zQlkobbujDzrrbmS0gTBhq5hOtdJiyLeKo5nQkhEBYVJDCDwwb0Yr3IRNdPv1k86O-ghHsH9F1_VeCMVe3RkyE_vryPycwvuGGeiDHV9iSls8NkDIq39ftP08NLoNkH_EBPDADSZj4aIWDLK7s1kCHqJA57b1Gs0lr61XsjB6bXipB3PPRjIqI1ic2bRHVLGW0W3dCpmjUyZVlLzDMNv17Hbg5bQwlIvzpp0V5UpYMhVZP3aqu4hCVV5SMXprgrZMNa1LzJmakTzXc99pvBVW0tqbUUWb1mu9lbM--z2c7kHAIFQ9ZakIlx_RnicwBfdtDhEF0oy5QC-Jk5LJSVuqtjg3TJTPz1Eh4xEh4GsAGkOL4CgqTOd2o7xOIKeleoYV_0G9U1SI8sRgc9D4HPbP-jMfNdGoxucAUm5F1jbBtbxEhsw40KiKsX7eBnAzNhBH0RZ6oyfQLrB4F6HaMvYbFZFtNsRwGG_saXZYVqTAtPG0q6A-a82kF7-_dq41SXCkJsUoxKe-RPaXBYPeLU_HC6SiKpzKBoRgJoyuI-FiqzLkEwfqH0RcZD6zUTpnVysVJ7aA_7Eb6dfrXM3-wLS35uDaTkWzFIaULGdrl4uHa6nuiNmmZ8cm3OVq4G8hNZxFQRs1UeN-qtruGCdue3JhDbJChjc1rJvwhKsjRdNp1YXHknvXn8-GiY4lLNgClIoT1vzHB-3nNVLuw41qZazcXj263ST6Hkm-RSM_jWfP6AvVbb3UfQYnQOBlgXiN3N0hoZrBBkroBSSRTDqwSHeRJMJ2xJgckDxsoIgpeqsGshRAvZH1W3imB-rP_nu7CEGS1JJNZr5TXIHlgxXqHGjW30jEMCHRNbnvNrpUS7Hy4EL9fohOaOfCRgM7h-liZ7agMXKijSxYxTLC-_G8xI7t7wzFn8Ulxyqlkm1xDGcs_XsJN_DAiid395yS9dzX4JnGU_ZV20HxMx0YZaSFu170ZhQJcq3RgXIxHc5UNW-X4ZQKeOHRK6pXVO_-R6qK_JJpXtnWV3__l6y9K88JOAhQd7JxHGGLc8MuV7_xh_9xhImGBPi8sGtwPHv84uDIu9W5AQoCWm6wlkcVToYmKC9D4UxeCNXvaHGopBwj6h7MvPKaiy4u9T9wASSljlaee8x-7LGx39YXX4zipRAWhk3cl1kDm7sugQw6xR4ciqtwPh3kEkUP03Z78-aA1CThlJzXJhyZ6k9Q3hwX2oiofpfCFadK_4cG7QOv_16TorWi16ET2i1G-DkquQteuF3eo2PDBS1T81BvqSQhA_h_tFJm6gCnnPkkyenqQIzcrp8q7xH_BCPxQyU9jwPUjUdvUfwITcpM1UR40bfbDh_R77s7pBNAOEYZPKvRTNcoYkrVA8pWxuZ58rCqgBEODqNQTXiH9vuOB3VtywyXCP8ne5K_ND3nz3vr_Tvo9qa1uS_V9mquEYDjzlAQXw32pYFQN3BQ3lFVByd7ic42xBzXOmO72geQ12t8Gl1wq3uRfaLEcucA8C6s07lzWDDcDNa5_MV1kybx-lT7Uul16gJb8kM2xs2D1UT8HU1dfwkOf-WRB0lLGYzBEce7cdAJdgn5PAf1GaNeV2cTpBTQKnahtHMehbtHVZwwU1GoTSd3r-ovK352O7JRN0ZdKw-RiRx83euydpIIq177y5lvjXS937Zn9IGGE6lkcWINvIoYWN0Rjg6OFiOkNXDBm38qFZvzNHKrHLEEaQGwiaaxfzoLlf1vcPMkTiBX4HGQ1MxSaYH3yvU6XtgSinVbGlmc0AgN_OiwdEh57sJ3oKadIyqQzq_jObJ7Nk_K2HgShN3XrKd7-5MzNQNvOubsSsXjKsDCyZhUyd4qW01Ec0_b3Qrg7Imjkvv9VeeIBEFvrcyoKA99MpelUZgiRSxvn1_HvBAUx6VWmjkPrH_J5F7QljcPExq_Nt7Se26IGWBZQQi-b7M7qkT4NqYOyMp4QNnpuWjo15RN0IRsicPp5wfkB60PWhS5OhW1dhfqMdv3ddl1h_QJ_3RLhT7g03NeO5bYyj__PDJPgUvVemfZtFwqpXCUdR2kerG2T5WuYr5kLtcpn-vseuW9zR8E5TKKgDhuFAVLdsb_iGj2QRhrfkdemzuCq4Na_VX2gcLV_GoGZk7cwOQ9eqSZlx-tgfhzoh8D9jlZSbA0zGl45_M1n3nY&opi=122715837
+                - generic [ref=f5e63]: Why this ad?
+          - generic [ref=f5e66]:
+            - generic [ref=f5e67] [cursor=pointer]: Seen this ad multiple times
+            - generic [ref=f5e70] [cursor=pointer]: Ad covered content
+            - generic [ref=f5e73] [cursor=pointer]: Not interested in this ad
+            - generic [ref=f5e76] [cursor=pointer]: Ad was inappropriate
+          - generic [ref=f5e79]: Thanks. Feedback improves Google ads
+          - generic [ref=f5e85]: Ad closed by
+          - generic [ref=f5e98]:
+            - generic [ref=f5e99] [cursor=pointer]
+            - generic [ref=f5e103]:
+              - generic [ref=f5e105]:
+                - text: Personalize ads on this site
+                - generic [ref=f5e107] [cursor=pointer]
+              - link [ref=f5e109] [cursor=pointer]:
+                - /url: https://support.google.com/ads/answer/10923348
+                - generic [ref=f5e110]: Learn more
+      - iframe [ref=e285]:
+        - generic [ref=f10e1]:
+          - generic [ref=f10e4]:
+            - generic [ref=f10e5]:
+              - generic "Cert Masterclass" [ref=f10e6]:
+                - link "Start Learning Free Today" [ref=f10e8] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CFIQHF2HQavaqEvbSmsMP3LHU6QjMiMuPigHKvIi0xBa1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9DB9FeCG6E9L3AD79ThUAiOV-fPWC1UpJklamdjXU9TUCjtpPtueg1wi6k1JFb2aPk-v-hu_9o3DC2SvfDHUjywmUgdny02P1M-k0DVs7Do-wBHUJrdwBvGQSsYwm-AdKXTm_PKorGfIfdy3clxR51ICGq1_XYLWP3ZqMJTvHkshGo6H4avPEbXCTrrfCw1ZACAE3zg0FVgzRmC4FnvpP2f6An9PCO2huiRo15e6rNG725J623pVgrtBGJ5V3Q_7CNSIcQ9-SAGRUZDT0qikyGBcmvoC40ncHjcw2vElxqm7YaHxgsb194mNu3eu6siR70SkHS2w-jZ9pZg8McQtHcAnxdPoriCJsMkPelLQHv1sCE61ELsrdrIijaEScoscU7ABOajwpP5BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY1sjo66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJ7DZ-8ITaQByACgOYCwHICwGiDAwqCgoIjt-xApXisQKqDQJJTsgNAeINEwjK-ujrobuXAxV2qWYCHdwYNY3qDRMI6sjp66G7lwMVdqlmAh3cGDWN8A0CiA7___________8B2BMNiBQG0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAICuAEESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE&num=1&cid=CAQShwIAQM4h3OsdwTyp6tvQRaWXELhGH75Jvf3gxOx7U7fTgDrcTpY4Q77ECy5Wswq92MRZX1tTsHsm-T3BqIw0T0zkF5RmC0Fu0w-ohoPD1K2KD40xI4D-DCIPNHYmz0ih9TuYuTpss_xbx5h71EIL_BCrFFbnXQsR-dmvO-_YiAAKc3czuDBQRBClSEh5ikGEufqQ_g9249zFCoScm-H0qxNmLobMzjyitR_XVhGLHag0Fcd44QLXwlGySS7d3q8ciz7zOrPud0BKky6sRAYHzv_fadvqqrdR82L0aScu9ZkH-Ye3r5QIML5OMHxXpWpRfsldLJFLsM57j3fYV9jB8O8s3fB2mbb87RgB&sig=AOD64_2WK7oxEEezX_MYZib7qE_RGVw0dA&rf=4&nb=0&adurl=https://www.certmasterclass.com/certification/claude-certified-architect-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE
+              - generic "Cert Masterclass" [ref=f10e9]:
+                - link "Try Free for 7 Days" [ref=f10e10] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CFIQHF2HQavaqEvbSmsMP3LHU6QjMiMuPigHKvIi0xBa1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9DB9FeCG6E9L3AD79ThUAiOV-fPWC1UpJklamdjXU9TUCjtpPtueg1wi6k1JFb2aPk-v-hu_9o3DC2SvfDHUjywmUgdny02P1M-k0DVs7Do-wBHUJrdwBvGQSsYwm-AdKXTm_PKorGfIfdy3clxR51ICGq1_XYLWP3ZqMJTvHkshGo6H4avPEbXCTrrfCw1ZACAE3zg0FVgzRmC4FnvpP2f6An9PCO2huiRo15e6rNG725J623pVgrtBGJ5V3Q_7CNSIcQ9-SAGRUZDT0qikyGBcmvoC40ncHjcw2vElxqm7YaHxgsb194mNu3eu6siR70SkHS2w-jZ9pZg8McQtHcAnxdPoriCJsMkPelLQHv1sCE61ELsrdrIijaEScoscU7ABOajwpP5BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY1sjo66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJ7DZ-8ITaQByACgOYCwHICwGiDAwqCgoIjt-xApXisQKqDQJJTsgNAeINEwjK-ujrobuXAxV2qWYCHdwYNY3qDRMI6sjp66G7lwMVdqlmAh3cGDWN8A0CiA7___________8B2BMNiBQG0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAICuAEESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE&num=1&cid=CAQShwIAQM4h3OsdwTyp6tvQRaWXELhGH75Jvf3gxOx7U7fTgDrcTpY4Q77ECy5Wswq92MRZX1tTsHsm-T3BqIw0T0zkF5RmC0Fu0w-ohoPD1K2KD40xI4D-DCIPNHYmz0ih9TuYuTpss_xbx5h71EIL_BCrFFbnXQsR-dmvO-_YiAAKc3czuDBQRBClSEh5ikGEufqQ_g9249zFCoScm-H0qxNmLobMzjyitR_XVhGLHag0Fcd44QLXwlGySS7d3q8ciz7zOrPud0BKky6sRAYHzv_fadvqqrdR82L0aScu9ZkH-Ye3r5QIML5OMHxXpWpRfsldLJFLsM57j3fYV9jB8O8s3fB2mbb87RgB&sig=AOD64_2WK7oxEEezX_MYZib7qE_RGVw0dA&rf=4&nb=0&adurl=https://www.certmasterclass.com/certification/claude-certified-architect-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE
+              - link "Step-by-step video training to help you prepare, and pass your Claude exam. Only $29" [ref=f10e12] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CFIQHF2HQavaqEvbSmsMP3LHU6QjMiMuPigHKvIi0xBa1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9DB9FeCG6E9L3AD79ThUAiOV-fPWC1UpJklamdjXU9TUCjtpPtueg1wi6k1JFb2aPk-v-hu_9o3DC2SvfDHUjywmUgdny02P1M-k0DVs7Do-wBHUJrdwBvGQSsYwm-AdKXTm_PKorGfIfdy3clxR51ICGq1_XYLWP3ZqMJTvHkshGo6H4avPEbXCTrrfCw1ZACAE3zg0FVgzRmC4FnvpP2f6An9PCO2huiRo15e6rNG725J623pVgrtBGJ5V3Q_7CNSIcQ9-SAGRUZDT0qikyGBcmvoC40ncHjcw2vElxqm7YaHxgsb194mNu3eu6siR70SkHS2w-jZ9pZg8McQtHcAnxdPoriCJsMkPelLQHv1sCE61ELsrdrIijaEScoscU7ABOajwpP5BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY1sjo66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJ7DZ-8ITaQByACgOYCwHICwGiDAwqCgoIjt-xApXisQKqDQJJTsgNAeINEwjK-ujrobuXAxV2qWYCHdwYNY3qDRMI6sjp66G7lwMVdqlmAh3cGDWN8A0CiA7___________8B2BMNiBQG0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAICuAEESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE&num=1&cid=CAQShwIAQM4h3OsdwTyp6tvQRaWXELhGH75Jvf3gxOx7U7fTgDrcTpY4Q77ECy5Wswq92MRZX1tTsHsm-T3BqIw0T0zkF5RmC0Fu0w-ohoPD1K2KD40xI4D-DCIPNHYmz0ih9TuYuTpss_xbx5h71EIL_BCrFFbnXQsR-dmvO-_YiAAKc3czuDBQRBClSEh5ikGEufqQ_g9249zFCoScm-H0qxNmLobMzjyitR_XVhGLHag0Fcd44QLXwlGySS7d3q8ciz7zOrPud0BKky6sRAYHzv_fadvqqrdR82L0aScu9ZkH-Ye3r5QIML5OMHxXpWpRfsldLJFLsM57j3fYV9jB8O8s3fB2mbb87RgB&sig=AOD64_2WK7oxEEezX_MYZib7qE_RGVw0dA&rf=4&nb=7&adurl=https://www.certmasterclass.com/certification/claude-certified-architect-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE
+                - text: Step-by-step video training to help youprepare, and pass your Claude exam.Only $29
+              - generic "Cert Masterclass" [ref=f10e13]:
+                - link "Cert Masterclass" [ref=f10e14] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CFIQHF2HQavaqEvbSmsMP3LHU6QjMiMuPigHKvIi0xBa1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9DB9FeCG6E9L3AD79ThUAiOV-fPWC1UpJklamdjXU9TUCjtpPtueg1wi6k1JFb2aPk-v-hu_9o3DC2SvfDHUjywmUgdny02P1M-k0DVs7Do-wBHUJrdwBvGQSsYwm-AdKXTm_PKorGfIfdy3clxR51ICGq1_XYLWP3ZqMJTvHkshGo6H4avPEbXCTrrfCw1ZACAE3zg0FVgzRmC4FnvpP2f6An9PCO2huiRo15e6rNG725J623pVgrtBGJ5V3Q_7CNSIcQ9-SAGRUZDT0qikyGBcmvoC40ncHjcw2vElxqm7YaHxgsb194mNu3eu6siR70SkHS2w-jZ9pZg8McQtHcAnxdPoriCJsMkPelLQHv1sCE61ELsrdrIijaEScoscU7ABOajwpP5BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY1sjo66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJ7DZ-8ITaQByACgOYCwHICwGiDAwqCgoIjt-xApXisQKqDQJJTsgNAeINEwjK-ujrobuXAxV2qWYCHdwYNY3qDRMI6sjp66G7lwMVdqlmAh3cGDWN8A0CiA7___________8B2BMNiBQG0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAICuAEESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE&num=1&cid=CAQShwIAQM4h3OsdwTyp6tvQRaWXELhGH75Jvf3gxOx7U7fTgDrcTpY4Q77ECy5Wswq92MRZX1tTsHsm-T3BqIw0T0zkF5RmC0Fu0w-ohoPD1K2KD40xI4D-DCIPNHYmz0ih9TuYuTpss_xbx5h71EIL_BCrFFbnXQsR-dmvO-_YiAAKc3czuDBQRBClSEh5ikGEufqQ_g9249zFCoScm-H0qxNmLobMzjyitR_XVhGLHag0Fcd44QLXwlGySS7d3q8ciz7zOrPud0BKky6sRAYHzv_fadvqqrdR82L0aScu9ZkH-Ye3r5QIML5OMHxXpWpRfsldLJFLsM57j3fYV9jB8O8s3fB2mbb87RgB&sig=AOD64_2WK7oxEEezX_MYZib7qE_RGVw0dA&rf=4&nb=1&adurl=https://www.certmasterclass.com/certification/claude-certified-architect-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE
+            - link "OPEN" [ref=f10e18] [cursor=pointer]:
+              - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CFIQHF2HQavaqEvbSmsMP3LHU6QjMiMuPigHKvIi0xBa1kB8QASDG-9Z5YOXK5YO0DqAB_ZWj6QPIAQHgAgCoAwHIAwqqBKICT9DB9FeCG6E9L3AD79ThUAiOV-fPWC1UpJklamdjXU9TUCjtpPtueg1wi6k1JFb2aPk-v-hu_9o3DC2SvfDHUjywmUgdny02P1M-k0DVs7Do-wBHUJrdwBvGQSsYwm-AdKXTm_PKorGfIfdy3clxR51ICGq1_XYLWP3ZqMJTvHkshGo6H4avPEbXCTrrfCw1ZACAE3zg0FVgzRmC4FnvpP2f6An9PCO2huiRo15e6rNG725J623pVgrtBGJ5V3Q_7CNSIcQ9-SAGRUZDT0qikyGBcmvoC40ncHjcw2vElxqm7YaHxgsb194mNu3eu6siR70SkHS2w-jZ9pZg8McQtHcAnxdPoriCJsMkPelLQHv1sCE61ELsrdrIijaEScoscU7ABOajwpP5BeAEAYgF8IS2tFqgBmaAB-vp3BaoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDIIgGEQARgdMgiKgoCAgICACDoPgECAwICAgICogAKog4AYSL39wTpY1sjo66G7lwNgAfIIG2FkeC1zdWJzeW4tMzUyMDYxNzM0MTY2NTU5MrEJ7DZ-8ITaQByACgOYCwHICwGiDAwqCgoIjt-xApXisQKqDQJJTsgNAeINEwjK-ujrobuXAxV2qWYCHdwYNY3qDRMI6sjp66G7lwMVdqlmAh3cGDWN8A0CiA7___________8B2BMNiBQG0BUByhYCCgD4FgGAFwGyFxAYASoKNjE2ODU3NjUwNVAGuhcCOAGqGBcJAAAAAICuAEESCjYxNjg1NzY1MDUYAbIYCRIChlQYZiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE&num=1&cid=CAQShwIAQM4h3OsdwTyp6tvQRaWXELhGH75Jvf3gxOx7U7fTgDrcTpY4Q77ECy5Wswq92MRZX1tTsHsm-T3BqIw0T0zkF5RmC0Fu0w-ohoPD1K2KD40xI4D-DCIPNHYmz0ih9TuYuTpss_xbx5h71EIL_BCrFFbnXQsR-dmvO-_YiAAKc3czuDBQRBClSEh5ikGEufqQ_g9249zFCoScm-H0qxNmLobMzjyitR_XVhGLHag0Fcd44QLXwlGySS7d3q8ciz7zOrPud0BKky6sRAYHzv_fadvqqrdR82L0aScu9ZkH-Ye3r5QIML5OMHxXpWpRfsldLJFLsM57j3fYV9jB8O8s3fB2mbb87RgB&sig=AOD64_2WK7oxEEezX_MYZib7qE_RGVw0dA&rf=4&nb=8&adurl=https://www.certmasterclass.com/certification/claude-certified-architect-foundations%3Fgad_source%3D5%26gad_campaignid%3D24269128304%26gclid%3DEAIaIQobChMItpL366G7lwMVdqlmAh3cGDWNEAEYASAAEgLCPPD_BwE
+          - generic [ref=f10e22]:
+            - link [ref=f10e24] [cursor=pointer]:
+              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KMr65f0P7imPkWrAhUsjSi4_ZwEWizKRgWlucg8HzKeuQuDMgAxF_o19RL9bAI7M50TLcKN8b1o8BCQj5WI2cUQUCaTqhyCeZMcXNtrEdVl6rIiDmCW85d6AtVpEQzv5oIxav1dQqvNaeeh9KbNvCZcdHx9lXPQclouimfZ0xhGCSSBa1ZVatqR5OVGT3vwzuant_NKSnXIMRP59fwzH6w-CK21TLvVdzAi7KZiifRhg4wyEK9l007j7vqWBmhNHL0issgBib-UrlBBi73lsBhFVgVlYv3UWTKWKbnhnpdJfX5lRflpMOZv958VCNLQzExVkW9U2EOFAoHJaSjsL-AY56pu6dIBP86qdoGqAvdSIiw6u7kR21tNJ-SHW5HQtRuJTEO7dZHjtZTjzvxpakiLZpmcBa19WauiehTW2JYyKr2UmzdqqkgnEVacmMS4CNSlnGjT7jmJ_h1bX1O4TFSMcTpbdUeMHje3Jxq_9V4-f1qw3Q9nLTUIX9iWrMf47EPcBKafDaVUQK-ToyGiRY5qYxuf_4Ibg8gXrBaZcaW2NOwb4wAWC-7nCwnWPebiTsk46S0jgatxsyaYDbyYVcAKhGlGBfQr95GKQOmWVDKDNx0OrA5i1JoWOkSlVNzmxX7b-lZ-aTcrv_DddytZmTAhYVrxHGNFcTaxniD822NpGpfIcLwOcMXvftpUyKTJ7BaAgjM8FXDIOub6nst2HJKOTvO8RfWv_POCP5Z1QIfXUAC_lCV6iRsFHdnvg3KnE8pjGm9Ehu0ux7dtimYWyEQjgGpzW_P4YcPIcNpvAzVBd5fP6PSukj0gv0nggLoIC-byK3zVau6UpBWX5IXxhJ87uxApEXBt_TmFFL9CmIkMDI0SQ66s64h9oUsHl0JmjocM6-GsjepTmOZ_thr5y1vnAs7sIIxTGEyjtpvto7oJikQ82JvrYsKY4V2w0kFgN1zNB6EoXU7mz_iqq8N8e3ZcGybRxovxla8z9kfDJm_JnZ5IzWw3hXA_8C-cNMl-VszpzW-oYj6uspzw2PAO3Sx9WVRN0QD7aNoCWnU_cBesgMlrhB19YtHDD1tuwYRgkQOQd1a6ljSKOQGTNt_MSIWSyC-OtitfCE8aWx88vYkrMHV7Ow9FRtCXXhrdyJsT3htY3BbBQP3M10JcMLu6A_NArjc2K-jhRISJNH_yMjJ8IH98Af40jRweZHdjWYGyBHxtkpVv6OXcWBM7NSRs9Gi-drLahivbVlw9N9YAYe3jmK0ymZhQsdc0JrUaMz-Gy15bvi1ezjQLVXbnjdlWijdkzlyWUs_UgALnD0yLiLj9wc1RS76QprvJt6o6Se2glY4Qc8EC_gtVV1a7ssjxYd5n4di4rELgY7PHAbwqlQ_gGiuybdJeXdjA2oRQ-FnsOK-txFbr5ZIiZ-QGILlXEC0ObOcjQyZGhbNDh7DSVsfg1htft9lzPFZ5VQGiwCNizh_dFqRLJrxH2CQIH-FcMqg5bn8dhouBRuTpbDuRLTWts1LuUw4CysP9aMnKi2CPi-o2cKKyUovoCs0xrHxymLMfOlJFeAt47fQzOzbaFsqvyBkt9HplHUkmaq8veM7lfQbNnWDswPKz8VIaZVRO3EOlDnIpBl9Sp1p7dZJ7rDRVgCDu054FnsQ1E2jupqL_gYo7skVsHbxKxxhWdzGtgdM5eNo_yB-fH_TVCJX8YPH1ffeahmuqOaJslES-5xIwlkxaZdeO2gxjINHhyCQZ56mNRxw0fdyZOMvPqbzOVFLRQRP2jg5KEvr3NFO_ZjYGqEUoVAfbs9rVlneLvQI-uQSjtmZay8wPSgO39ODiJGuR9kWd_CBsL28m7Q17MWIQUBR770R0JNl-NMuTZr6I4eNYB_DoZZWFZAeP_hqUyVKN8fvmrVKrSHzBkoQODGSEiD6u1BsPeCgaTg9YErHPMF6ZvBixqfh3IB2Bmb39pZivu3ujaYzGHhz5PBIA9rS8s8aWiTNlcVkx6KVLLp0PF2cnD80wJ9q0jbRZCorJmNii2Semd8e12FbSekw2MxHnlkfcbCgtJYtczO19S4hChaJOo9UhHqfsGIJtqioiA6ZyC0rJdqzoTuz2q8NmvAL3niHzAYxtRmu1YCIO2a5YLpwtDb6pHuD9qJbRwAlhWoHjrBLJuY4jFqkbnb7gZMK6LqNDceIoDS0DaUmp7xAptZWXgxeOlCzVfLSGyXpeiPYGaDoO4OlXDt-NMhWce3W4aCJcvwg5YeDOfxl4mOc2MHQSK-w2v1yAHJecCR7T1DBoEok3uSmIyJM4FH7kPqN_mDU2dT-O15rNRHJZAJq7jU6chgosvBQGdGooS_U-P64Q_uoKEwn3F8-2uDjsgd2bvioOS4FKyqNMEyjR8Zi05QQxoMzLsGuAcThKZ-n8qFvDtPLSLpEowK3Ln8ig3nR1TKTFj-F5MwW8MZdoIK2Ie3_XAgGo5PosWbihaDSpgo1mEI72Uy1CnvguYtfTivh-Vdzq5ScAenyfE5X2YM-X9vnl_iC7r_gP4n1IuJg0645ABRSNyq6tYAxZaP2sNhV2G_mLXWMsf-rK6Y7z2xHwcf1Sg5rF6aHzvV0HKZrhCPCaqANxFnQpk8hc5sXIyIrrJM-DHJwSiXontBQrahkKfBzg1LxLCf_Xe_Zl1aAk2T5fWDVDA1qBHXQYek9NLjwl_-e33ExkKacLihP-EESxSprwJu7IrMwateDinaKKV4GGr8jyIO2gjA2ZAgAsVDe9I0jPiw4kFEiysKZfK7UD6hVgXvs9j5G33P2Dc7wTsaimPqipgayaIeI27oyNqt62BRREJ6sFFgKxTfSFxDt9m8anU-bjahiokRD4fpnPi3nUoISsMkQq0IShgEk3XHq29IhmkP4_jYU_VhIKpMZzKQT2R08fDV0zCAp1C5mU8loa-D2YUKe1r0F7srdI6RHWr9fWtH91dSfxUuWC0F3pDnZ5caWNQGqshtaKX0tX7WzNbuE_M1ET6gyxAoi24QZ3T7CyskVEZhPymcASr9953v0ZaJ3Y6nXfkpfvmhqrGMAZKrqLuT752-xujGe4lIl0ZQe_uTfa6gbaLiI10t7oMBDI98X3WnLU3v8ehvmmeQ30Top1hhudKXbN5XejYbieKJif0Eoe93-7_CY&opi=122715837
+            - link [ref=f10e28] [cursor=pointer]:
+              - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KMr65f0P7imPkWrAhUsjSi4_ZwEWizKRgWlucg8HzKeuQuDMgAxF_o19RL9bAI7M50TLcKN8b1o8BCQj5WI2cUQUCaTqhyCeZMcXNtrEdVl6rIiDmCW85d6AtVpEQzv5oIxav1dQqvNaeeh9KbNvCZcdHx9lXPQclouimfZ0xhGCSSBa1ZVatqR5OVGT3vwzuant_NKSnXIMRP59fwzH6w-CK21TLvVdzAi7KZiifRhg4wyEK9l007j7vqWBmhNHL0issgBib-UrlBBi73lsBhFVgVlYv3UWTKWKbnhnpdJfX5lRflpMOZv958VCNLQzExVkW9U2EOFAoHJaSjsL-AY56pu6dIBP86qdoGqAvdSIiw6u7kR21tNJ-SHW5HQtRuJTEO7dZHjtZTjzvxpakiLZpmcBa19WauiehTW2JYyKr2UmzdqqkgnEVacmMS4CNSlnGjT7jmJ_h1bX1O4TFSMcTpbdUeMHje3Jxq_9V4-f1qw3Q9nLTUIX9iWrMf47EPcBKafDaVUQK-ToyGiRY5qYxuf_4Ibg8gXrBaZcaW2NOwb4wAWC-7nCwnWPebiTsk46S0jgatxsyaYDbyYVcAKhGlGBfQr95GKQOmWVDKDNx0OrA5i1JoWOkSlVNzmxX7b-lZ-aTcrv_DddytZmTAhYVrxHGNFcTaxniD822NpGpfIcLwOcMXvftpUyKTJ7BaAgjM8FXDIOub6nst2HJKOTvO8RfWv_POCP5Z1QIfXUAC_lCV6iRsFHdnvg3KnE8pjGm9Ehu0ux7dtimYWyEQjgGpzW_P4YcPIcNpvAzVBd5fP6PSukj0gv0nggLoIC-byK3zVau6UpBWX5IXxhJ87uxApEXBt_TmFFL9CmIkMDI0SQ66s64h9oUsHl0JmjocM6-GsjepTmOZ_thr5y1vnAs7sIIxTGEyjtpvto7oJikQ82JvrYsKY4V2w0kFgN1zNB6EoXU7mz_iqq8N8e3ZcGybRxovxla8z9kfDJm_JnZ5IzWw3hXA_8C-cNMl-VszpzW-oYj6uspzw2PAO3Sx9WVRN0QD7aNoCWnU_cBesgMlrhB19YtHDD1tuwYRgkQOQd1a6ljSKOQGTNt_MSIWSyC-OtitfCE8aWx88vYkrMHV7Ow9FRtCXXhrdyJsT3htY3BbBQP3M10JcMLu6A_NArjc2K-jhRISJNH_yMjJ8IH98Af40jRweZHdjWYGyBHxtkpVv6OXcWBM7NSRs9Gi-drLahivbVlw9N9YAYe3jmK0ymZhQsdc0JrUaMz-Gy15bvi1ezjQLVXbnjdlWijdkzlyWUs_UgALnD0yLiLj9wc1RS76QprvJt6o6Se2glY4Qc8EC_gtVV1a7ssjxYd5n4di4rELgY7PHAbwqlQ_gGiuybdJeXdjA2oRQ-FnsOK-txFbr5ZIiZ-QGILlXEC0ObOcjQyZGhbNDh7DSVsfg1htft9lzPFZ5VQGiwCNizh_dFqRLJrxH2CQIH-FcMqg5bn8dhouBRuTpbDuRLTWts1LuUw4CysP9aMnKi2CPi-o2cKKyUovoCs0xrHxymLMfOlJFeAt47fQzOzbaFsqvyBkt9HplHUkmaq8veM7lfQbNnWDswPKz8VIaZVRO3EOlDnIpBl9Sp1p7dZJ7rDRVgCDu054FnsQ1E2jupqL_gYo7skVsHbxKxxhWdzGtgdM5eNo_yB-fH_TVCJX8YPH1ffeahmuqOaJslES-5xIwlkxaZdeO2gxjINHhyCQZ56mNRxw0fdyZOMvPqbzOVFLRQRP2jg5KEvr3NFO_ZjYGqEUoVAfbs9rVlneLvQI-uQSjtmZay8wPSgO39ODiJGuR9kWd_CBsL28m7Q17MWIQUBR770R0JNl-NMuTZr6I4eNYB_DoZZWFZAeP_hqUyVKN8fvmrVKrSHzBkoQODGSEiD6u1BsPeCgaTg9YErHPMF6ZvBixqfh3IB2Bmb39pZivu3ujaYzGHhz5PBIA9rS8s8aWiTNlcVkx6KVLLp0PF2cnD80wJ9q0jbRZCorJmNii2Semd8e12FbSekw2MxHnlkfcbCgtJYtczO19S4hChaJOo9UhHqfsGIJtqioiA6ZyC0rJdqzoTuz2q8NmvAL3niHzAYxtRmu1YCIO2a5YLpwtDb6pHuD9qJbRwAlhWoHjrBLJuY4jFqkbnb7gZMK6LqNDceIoDS0DaUmp7xAptZWXgxeOlCzVfLSGyXpeiPYGaDoO4OlXDt-NMhWce3W4aCJcvwg5YeDOfxl4mOc2MHQSK-w2v1yAHJecCR7T1DBoEok3uSmIyJM4FH7kPqN_mDU2dT-O15rNRHJZAJq7jU6chgosvBQGdGooS_U-P64Q_uoKEwn3F8-2uDjsgd2bvioOS4FKyqNMEyjR8Zi05QQxoMzLsGuAcThKZ-n8qFvDtPLSLpEowK3Ln8ig3nR1TKTFj-F5MwW8MZdoIK2Ie3_XAgGo5PosWbihaDSpgo1mEI72Uy1CnvguYtfTivh-Vdzq5ScAenyfE5X2YM-X9vnl_iC7r_gP4n1IuJg0645ABRSNyq6tYAxZaP2sNhV2G_mLXWMsf-rK6Y7z2xHwcf1Sg5rF6aHzvV0HKZrhCPCaqANxFnQpk8hc5sXIyIrrJM-DHJwSiXontBQrahkKfBzg1LxLCf_Xe_Zl1aAk2T5fWDVDA1qBHXQYek9NLjwl_-e33ExkKacLihP-EESxSprwJu7IrMwateDinaKKV4GGr8jyIO2gjA2ZAgAsVDe9I0jPiw4kFEiysKZfK7UD6hVgXvs9j5G33P2Dc7wTsaimPqipgayaIeI27oyNqt62BRREJ6sFFgKxTfSFxDt9m8anU-bjahiokRD4fpnPi3nUoISsMkQq0IShgEk3XHq29IhmkP4_jYU_VhIKpMZzKQT2R08fDV0zCAp1C5mU8loa-D2YUKe1r0F7srdI6RHWr9fWtH91dSfxUuWC0F3pDnZ5caWNQGqshtaKX0tX7WzNbuE_M1ET6gyxAoi24QZ3T7CyskVEZhPymcASr9953v0ZaJ3Y6nXfkpfvmhqrGMAZKrqLuT752-xujGe4lIl0ZQe_uTfa6gbaLiI10t7oMBDI98X3WnLU3v8ehvmmeQ30Top1hhudKXbN5XejYbieKJif0Eoe93-7_CY&opi=122715837
+          - generic [ref=f10e31] [cursor=pointer]
+          - generic [ref=f10e44]:
+            - generic [ref=f10e45] [cursor=pointer]
+            - generic [ref=f10e49]: Ads by
+            - generic [ref=f10e54]:
+              - generic [ref=f10e55]: Ad options
+              - generic [ref=f10e58]: Send feedback
+              - link [ref=f10e62] [cursor=pointer]:
+                - /url: https://adssettings.google.com/whythisad?source=display&reasons=AQSQ1KMr65f0P7imPkWrAhUsjSi4_ZwEWizKRgWlucg8HzKeuQuDMgAxF_o19RL9bAI7M50TLcKN8b1o8BCQj5WI2cUQUCaTqhyCeZMcXNtrEdVl6rIiDmCW85d6AtVpEQzv5oIxav1dQqvNaeeh9KbNvCZcdHx9lXPQclouimfZ0xhGCSSBa1ZVatqR5OVGT3vwzuant_NKSnXIMRP59fwzH6w-CK21TLvVdzAi7KZiifRhg4wyEK9l007j7vqWBmhNHL0issgBib-UrlBBi73lsBhFVgVlYv3UWTKWKbnhnpdJfX5lRflpMOZv958VCNLQzExVkW9U2EOFAoHJaSjsL-AY56pu6dIBP86qdoGqAvdSIiw6u7kR21tNJ-SHW5HQtRuJTEO7dZHjtZTjzvxpakiLZpmcBa19WauiehTW2JYyKr2UmzdqqkgnEVacmMS4CNSlnGjT7jmJ_h1bX1O4TFSMcTpbdUeMHje3Jxq_9V4-f1qw3Q9nLTUIX9iWrMf47EPcBKafDaVUQK-ToyGiRY5qYxuf_4Ibg8gXrBaZcaW2NOwb4wAWC-7nCwnWPebiTsk46S0jgatxsyaYDbyYVcAKhGlGBfQr95GKQOmWVDKDNx0OrA5i1JoWOkSlVNzmxX7b-lZ-aTcrv_DddytZmTAhYVrxHGNFcTaxniD822NpGpfIcLwOcMXvftpUyKTJ7BaAgjM8FXDIOub6nst2HJKOTvO8RfWv_POCP5Z1QIfXUAC_lCV6iRsFHdnvg3KnE8pjGm9Ehu0ux7dtimYWyEQjgGpzW_P4YcPIcNpvAzVBd5fP6PSukj0gv0nggLoIC-byK3zVau6UpBWX5IXxhJ87uxApEXBt_TmFFL9CmIkMDI0SQ66s64h9oUsHl0JmjocM6-GsjepTmOZ_thr5y1vnAs7sIIxTGEyjtpvto7oJikQ82JvrYsKY4V2w0kFgN1zNB6EoXU7mz_iqq8N8e3ZcGybRxovxla8z9kfDJm_JnZ5IzWw3hXA_8C-cNMl-VszpzW-oYj6uspzw2PAO3Sx9WVRN0QD7aNoCWnU_cBesgMlrhB19YtHDD1tuwYRgkQOQd1a6ljSKOQGTNt_MSIWSyC-OtitfCE8aWx88vYkrMHV7Ow9FRtCXXhrdyJsT3htY3BbBQP3M10JcMLu6A_NArjc2K-jhRISJNH_yMjJ8IH98Af40jRweZHdjWYGyBHxtkpVv6OXcWBM7NSRs9Gi-drLahivbVlw9N9YAYe3jmK0ymZhQsdc0JrUaMz-Gy15bvi1ezjQLVXbnjdlWijdkzlyWUs_UgALnD0yLiLj9wc1RS76QprvJt6o6Se2glY4Qc8EC_gtVV1a7ssjxYd5n4di4rELgY7PHAbwqlQ_gGiuybdJeXdjA2oRQ-FnsOK-txFbr5ZIiZ-QGILlXEC0ObOcjQyZGhbNDh7DSVsfg1htft9lzPFZ5VQGiwCNizh_dFqRLJrxH2CQIH-FcMqg5bn8dhouBRuTpbDuRLTWts1LuUw4CysP9aMnKi2CPi-o2cKKyUovoCs0xrHxymLMfOlJFeAt47fQzOzbaFsqvyBkt9HplHUkmaq8veM7lfQbNnWDswPKz8VIaZVRO3EOlDnIpBl9Sp1p7dZJ7rDRVgCDu054FnsQ1E2jupqL_gYo7skVsHbxKxxhWdzGtgdM5eNo_yB-fH_TVCJX8YPH1ffeahmuqOaJslES-5xIwlkxaZdeO2gxjINHhyCQZ56mNRxw0fdyZOMvPqbzOVFLRQRP2jg5KEvr3NFO_ZjYGqEUoVAfbs9rVlneLvQI-uQSjtmZay8wPSgO39ODiJGuR9kWd_CBsL28m7Q17MWIQUBR770R0JNl-NMuTZr6I4eNYB_DoZZWFZAeP_hqUyVKN8fvmrVKrSHzBkoQODGSEiD6u1BsPeCgaTg9YErHPMF6ZvBixqfh3IB2Bmb39pZivu3ujaYzGHhz5PBIA9rS8s8aWiTNlcVkx6KVLLp0PF2cnD80wJ9q0jbRZCorJmNii2Semd8e12FbSekw2MxHnlkfcbCgtJYtczO19S4hChaJOo9UhHqfsGIJtqioiA6ZyC0rJdqzoTuz2q8NmvAL3niHzAYxtRmu1YCIO2a5YLpwtDb6pHuD9qJbRwAlhWoHjrBLJuY4jFqkbnb7gZMK6LqNDceIoDS0DaUmp7xAptZWXgxeOlCzVfLSGyXpeiPYGaDoO4OlXDt-NMhWce3W4aCJcvwg5YeDOfxl4mOc2MHQSK-w2v1yAHJecCR7T1DBoEok3uSmIyJM4FH7kPqN_mDU2dT-O15rNRHJZAJq7jU6chgosvBQGdGooS_U-P64Q_uoKEwn3F8-2uDjsgd2bvioOS4FKyqNMEyjR8Zi05QQxoMzLsGuAcThKZ-n8qFvDtPLSLpEowK3Ln8ig3nR1TKTFj-F5MwW8MZdoIK2Ie3_XAgGo5PosWbihaDSpgo1mEI72Uy1CnvguYtfTivh-Vdzq5ScAenyfE5X2YM-X9vnl_iC7r_gP4n1IuJg0645ABRSNyq6tYAxZaP2sNhV2G_mLXWMsf-rK6Y7z2xHwcf1Sg5rF6aHzvV0HKZrhCPCaqANxFnQpk8hc5sXIyIrrJM-DHJwSiXontBQrahkKfBzg1LxLCf_Xe_Zl1aAk2T5fWDVDA1qBHXQYek9NLjwl_-e33ExkKacLihP-EESxSprwJu7IrMwateDinaKKV4GGr8jyIO2gjA2ZAgAsVDe9I0jPiw4kFEiysKZfK7UD6hVgXvs9j5G33P2Dc7wTsaimPqipgayaIeI27oyNqt62BRREJ6sFFgKxTfSFxDt9m8anU-bjahiokRD4fpnPi3nUoISsMkQq0IShgEk3XHq29IhmkP4_jYU_VhIKpMZzKQT2R08fDV0zCAp1C5mU8loa-D2YUKe1r0F7srdI6RHWr9fWtH91dSfxUuWC0F3pDnZ5caWNQGqshtaKX0tX7WzNbuE_M1ET6gyxAoi24QZ3T7CyskVEZhPymcASr9953v0ZaJ3Y6nXfkpfvmhqrGMAZKrqLuT752-xujGe4lIl0ZQe_uTfa6gbaLiI10t7oMBDI98X3WnLU3v8ehvmmeQ30Top1hhudKXbN5XejYbieKJif0Eoe93-7_CY&opi=122715837
+                - generic [ref=f10e63]: Why this ad?
+          - generic [ref=f10e66]:
+            - generic [ref=f10e67] [cursor=pointer]: Ad was inappropriate
+            - generic [ref=f10e70] [cursor=pointer]: Seen this ad multiple times
+            - generic [ref=f10e73] [cursor=pointer]: Not interested in this ad
+            - generic [ref=f10e76] [cursor=pointer]: Ad covered content
+          - generic [ref=f10e79]: Thanks. Feedback improves Google ads
+          - generic [ref=f10e85]: Ad closed by
+          - generic [ref=f10e98]:
+            - generic [ref=f10e99] [cursor=pointer]
+            - generic [ref=f10e103]:
+              - generic [ref=f10e105]:
+                - text: Personalize ads on this site
+                - generic [ref=f10e107] [cursor=pointer]
+              - link [ref=f10e109] [cursor=pointer]:
+                - /url: https://support.google.com/ads/answer/10923348
+                - generic [ref=f10e110]: Learn more
+  - contentinfo [ref=e286]:
+    - generic [ref=e287]: © 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```
+
+# Test source
+
+```ts
+  1  | import {test} from '@playwright/test'
+  2  | 
+  3  | test("demoqa calender",async({page})=>{
+  4  |     await page.goto("https://demoqa.com/automation-practice-form")
+  5  |     await page.locator("#dateOfBirthInput").click()
+  6  |     await page.locator('.react-datepicker__year-select').selectOption({label:"2000"})
+  7  | 
+  8  |     await page.locator('.react-datepicker__month-select').selectOption({value:"4"})
+  9  | 
+  10 |     // await page.locator('//div[@class="react-datepicker__day react-datepicker__day--015"]').click()
+  11 | 
+> 12 |     await page.getByText("5",{exact:true}).click()
+     |                                            ^ Error: locator.click: Error: strict mode violation: getByText('5', { exact: true }) resolved to 2 elements:
+  13 | })
+```

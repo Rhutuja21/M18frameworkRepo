@@ -1,0 +1,34 @@
+[
+    {
+        "url":"https://demoqa.com/automation-practice-form",
+        "name":"john",
+        "lastname":"sharma",
+        "email":"john@gmail.com",
+        "gender":"Male",
+        "mob":"9988776655",
+        "year":"2000",
+        "month":"5",
+        "subject":"A",
+        "hobbies":["Reading","Music"],
+        "picturepath":"C:/Users/rhutuja/Desktop/Weekly_Asessement_Links_T7-A.xlsx",
+        "address":"maharashtra",
+        "state":"NCR",
+        "city":"Delhi"
+    },
+    {
+        "url":"https://demoqa.com/automation-practice-form",
+        "name":"smitha",
+        "lastname":"reddy",
+        "email":"smitha@gmail.com",
+        "gender":"Female",
+        "mob":"9983476655",
+        "year":"2004",
+        "month":"7",
+        "subject":"P",
+        "hobbies":["Sports","Music"],
+        "picturepath":"C:/Users/rhutuja/Desktop/Weekly_Asessement_Links_T7-A.xlsx",
+        "address":"Karnataka",
+        "state":"Haryana",
+        "city":"Panipat"
+    }
+]

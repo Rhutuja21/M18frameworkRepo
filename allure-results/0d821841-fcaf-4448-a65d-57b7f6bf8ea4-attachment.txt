@@ -1,0 +1,62 @@
+<ref *1> Cell {
+  _row: Row {
+    _worksheet: Worksheet {
+      _workbook: [Workbook],
+      id: 1,
+      orderNo: 0,
+      _name: 'Sheet1',
+      state: 'visible',
+      _rows: [Array],
+      _columns: [Array],
+      _keys: {},
+      _merges: {},
+      rowBreaks: [],
+      properties: [Object],
+      pageSetup: [Object],
+      headerFooter: null,
+      dataValidations: [DataValidations],
+      views: [Array],
+      autoFilter: undefined,
+      _media: [],
+      sheetProtection: undefined,
+      tables: {},
+      conditionalFormattings: []
+    },
+    _number: 1,
+    _cells: [ [Circular *1] ],
+    style: {},
+    _outlineLevel: 0,
+    _hidden: undefined
+  },
+  _column: Column {
+    _worksheet: Worksheet {
+      _workbook: [Workbook],
+      id: 1,
+      orderNo: 0,
+      _name: 'Sheet1',
+      state: 'visible',
+      _rows: [Array],
+      _columns: [Array],
+      _keys: {},
+      _merges: {},
+      rowBreaks: [],
+      properties: [Object],
+      pageSetup: [Object],
+      headerFooter: null,
+      dataValidations: [DataValidations],
+      views: [Array],
+      autoFilter: undefined,
+      _media: [],
+      sheetProtection: undefined,
+      tables: {},
+      conditionalFormattings: []
+    },
+    _number: 1,
+    style: {},
+    _outlineLevel: 0
+  },
+  _address: 'A1',
+  _value: StringValue { model: { address: 'A1', value: 'Hello', type: 3 } },
+  style: {},
+  _mergeCount: 0
+}

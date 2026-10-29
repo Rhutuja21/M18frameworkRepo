@@ -1,0 +1,12 @@
+[
+  'bookshelf for home',
+  'books for kids 9-12 years',
+  'books bestsellers english',
+  'books for 1 + year old baby',
+  'books for 1 year old baby',
+  'books for 3 year old',
+  'books for 3 + year old',
+  'books for 2 + year old',
+  'books for 2 year old',
+  'bookshelf speaker'
+]

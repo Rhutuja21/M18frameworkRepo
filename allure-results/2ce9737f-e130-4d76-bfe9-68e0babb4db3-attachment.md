@@ -1,0 +1,108 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: excelutil.spec.ts >> excel util
+- Location: tests\excelutil.spec.ts:7:5
+
+# Error details
+
+```
+TypeError: Cannot read properties of undefined (reading 'getRow')
+```
+
+# Test source
+
+```ts
+  1  | import excel from "exceljs"
+  2  | 
+  3  | export async function readExcel(
+  4  |     filepath:string,
+  5  |     sheetName:string
+  6  | ):Promise<any[][]>{
+  7  |     let book= new excel.Workbook()
+  8  |     await book.xlsx.readFile(filepath)
+  9  |     let sheet=await book.getWorksheet(sheetName)
+  10 | 
+  11 |     let data:any[][]=[]
+  12 | 
+  13 |     sheet?.eachRow((row)=>{
+  14 |         let rowData:any[]=[]
+  15 |         row.eachCell((cell)=>{
+  16 |             rowData.push(cell.value)
+  17 |         })
+  18 |         data.push(rowData)
+  19 | 
+  20 |     })
+  21 |     return data
+  22 | }
+  23 | 
+  24 | 
+  25 | export async function getRowValues(
+  26 |     filepath:string,
+  27 |     sheetName:string,
+  28 |     rowNumber:number
+  29 | ):Promise<any[]>{
+  30 |     let book= new excel.Workbook()
+  31 |     await book.xlsx.readFile(filepath)
+  32 |     let sheet=await book.getWorksheet(sheetName)
+  33 |     let row=sheet?.getRow(rowNumber)
+  34 | 
+  35 |     let rowData:any[]=[]
+  36 | 
+  37 |     row?.eachCell((cell)=>{
+  38 |         rowData.push(cell.toString())
+  39 |     })
+  40 | 
+  41 |     return rowData
+  42 | 
+  43 | }
+  44 | 
+  45 | 
+  46 | 
+  47 | export async function getCellValue(
+  48 |     filepath:string,
+  49 |     sheetName:string,
+  50 |     rowNumber:number,
+  51 |     cellNumber:number
+  52 | ){
+  53 |     let book= new excel.Workbook()
+  54 |     await book.xlsx.readFile(filepath)
+  55 |     let sheet=await book.getWorksheet(sheetName)
+  56 | 
+  57 |     // let value=sheet?.getRow(rowNumber).getCell(cellNumber).value
+  58 |     // return String(value)
+  59 | 
+  60 |       let value=sheet?.getRow(rowNumber).getCell(cellNumber).toString()
+  61 |     return value
+  62 | 
+  63 | }
+  64 | 
+  65 | 
+  66 | export async function writeExcel(
+  67 |     filepath:string,
+  68 |     sheetName:string,
+  69 |     rowNumber:number,
+  70 |     cellNumber:number,
+  71 |     value:any
+  72 | ){
+  73 |     let book= new excel.Workbook()
+  74 |     await book.xlsx.readFile(filepath)
+  75 |     let sheet=await book.getWorksheet(sheetName)
+  76 | 
+  77 |     if(!sheet){
+  78 |         await book.addWorksheet(sheetName)
+  79 |     }
+  80 | 
+> 81 |     sheet!.getRow(rowNumber).getCell(cellNumber).value=value
+     |            ^ TypeError: Cannot read properties of undefined (reading 'getRow')
+  82 |     await book.xlsx.writeFile(filepath)
+  83 | 
+  84 | }
+  85 | 
+  86 | 
+```

@@ -1,0 +1,19 @@
+[
+  {
+    link: 'https://practicetestautomation.com/practice-test-login/',
+    user: 'student',
+    password: 'Password123'
+  }
+]
+[
+  {
+    link: 'https://practicetestautomation.com/practice-test-login/',
+    user: 'student',
+    password: 'Password123'
+  },
+  {
+    link: 'https://practicetestautomation.com/practice-test-login/',
+    user: 'stud',
+    password: 'pass'
+  }
+]

@@ -1,0 +1,5 @@
+read excel
+connect to Database
+genearting the test data
+read configuration file
+edit user

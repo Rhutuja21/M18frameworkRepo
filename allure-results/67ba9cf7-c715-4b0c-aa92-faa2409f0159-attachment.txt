@@ -1,0 +1,4 @@
+launch the browser
+launch the url
+login
+edit user

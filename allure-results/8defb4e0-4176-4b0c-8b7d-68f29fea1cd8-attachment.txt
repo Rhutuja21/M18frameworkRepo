@@ -1,0 +1,12 @@
+read excel
+connect to Database
+genearting the test data
+read configuration file
+launch the browser
+launch the url
+login
+add user
+logout
+close browser manually
+screenshot after failure
+clear temporary testdata

@@ -1,0 +1,7 @@
+{
+  x: 768.3500366210938,
+  y: 251.52500915527344,
+  width: 16.25,
+  height: 16.249984741210938
+}
+Password should contain atleast one uppercasePassword should contain atleast one numberPassword should contain atleast one special characterPassword should contain atleast 6 characters

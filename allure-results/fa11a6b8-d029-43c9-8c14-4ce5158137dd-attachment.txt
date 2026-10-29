@@ -1,0 +1,12 @@
+launch the browser
+launch the url
+login
+delete user
+logout
+close browser manually
+screenshot after failure
+clear temporary testdata
+disconnect database
+deleting the temporary testdata
+generate HTml report
+close the external resoucres
