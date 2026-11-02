@@ -23,7 +23,7 @@ test.afterAll(async()=>{
     console.log("disconnect database");
     console.log("deleting the temporary testdata");
     console.log("generate HTml report");
-    console.log("close the external resoucres");
+    // console.log("close the external resoucres");
 })
 
 test.beforeEach(async({page})=>{
