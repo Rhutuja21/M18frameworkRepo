@@ -14,9 +14,9 @@ test("test3",async()=>{
 
 test.beforeAll(async()=>{
     console.log("read excel");
-    console.log("connect to Database");
-    console.log("genearting the test data");
-    console.log("read configuration file"); 
+    // console.log("connect to Database");
+    // console.log("genearting the test data");
+    // console.log("read configuration file"); 
 })
 
 test.afterAll(async()=>{
